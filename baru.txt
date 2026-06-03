@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn'Scape - Open Trip & Experience Organizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                        DAWN'SCAPE
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#open-trip" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Open Trip</a>
+                    <a href="#private-trip" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Private Trip</a>
+                    <a href="#experience" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">Experience</a>
+                    <a href="https://wa.me/62895369809676?text=Halo%20Dawn%27scape%2C%20saya%20ingin%20bertanya%20mengenai%20paket%20trip%20yang%20tersedia." target="_blank" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-full shadow-lg shadow-blue-500/20 transition-all duration-200 transform hover:-translate-y-0.5">
+                        Hubungi Kami
+                    </a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-slate-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80" alt="Hero Background" class="w-full h-full object-cover opacity-40 scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-900/40"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+                Find the light in every escape with <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Dawn'scape</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-slate-300 font-light mb-10">
+                Temukan pengalaman seru, teman baru, dan petualangan yang tak terlupakan lewat paket trip pilihan terbaik kami.
+            </p>
+        </div>
+    </section>
+
+    <section id="open-trip" class="py-24 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Open Trip Pilihan</h2>
+                <p class="text-lg text-slate-600 font-medium">Gabung dengan traveler lain dan nikmati keseruannya!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=600&q=80" alt="Gunung Bromo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Gunung Bromo - 1D (Day Trip)</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Jawa Timur, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Menanti magis matahari terbit berlatar kaldera Bromo, melintasi lautan pasir yang luas, dan berdiri di bibir kawah yang spektakuler.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 350.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('bromo', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=600&q=80" alt="Canyoneering Adventure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Canyoneering - 1D (Day Trip)</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Bali, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Pacu adrenalin ekstrem menyusuri ngarai tersembunyi, menuruni air terjun deras menggunakan tali, serta melompat ke kolam alami.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 750.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('canyon', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1682687220063-4742bd7fd538?auto=format&fit=crop&w=600&q=80" alt="Pulau Menjangan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Menjangan - 1D Day Trip</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Bali Barat, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Mengeksplorasi spot snorkeling terbaik dengan *coral wall* yang megah serta keanekaragaman biota laut langka di kawasan Bali Barat.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 425.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('menjangan', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Bali City Tour" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Bali City Tour - 4D 3N</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Bali, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Eksplorasi mahakarya pulau Dewata secara lengkap dari keindahan pura di atas danau Bedugul, magisnya Ubud, hingga sunset di Uluwatu.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 1.450.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('balitour', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://i.pinimg.com/1200x/6e/83/b7/6e83b7ed66d417baab522e7eea051250.jpg" alt="Pulau Peucang" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Peucang - 3D 2N</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Banten, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Menikmati hamparan pasir putih, jernihnya laut, serta keanekaragaman satwa khas taman nasional dalam suasana pulau yang tenang dan alami.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 750.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('peucang', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80" alt="Pulau Sabesi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Sabesi - 3D 2N</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Lampung, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Air laut sebening kristal, menghadirkan panorama bawah laut yang terlihat jelas dari permukaan tenang, bersih, dan begitu menawan.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 675.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('sabesi', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Karimun Jawa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Karimun Jawa - 3D 2N</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Jepara, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Sebuah tropical sanctuary eksklusif dengan laut toska sebening kaca, pulau-pulau private berpasir putih halus, pengalaman snorkeling terbaik.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 875.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('karimunjawa', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Pulau Harapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Harapan - 2D 1N</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Jakarta, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Ketenangan dalam balutan suasana tropis yang elegan, di mana laut biru jernih berpadu dengan hamparan pulau kecil yang masih alami dan jauh dari bising.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 418.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('harapan', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?auto=format&fit=crop&w=600&q=80" alt="Baduy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Baduy - 2D 1N</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Banten, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Merasakan kearifan lokal yang bersahaja di desa adat Suku Baduy, menyatu dengan alam asli tanpa gawai, serta menikmati damainya kehidupan.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 250.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('baduy', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=600&q=80" alt="Pulau Pari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Pari - 1D (Day Trip)</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Jakarta, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Sentuhan lembut Pasir Perawan berpadu harmoni dengan jernihnya laut toska. Pelarian satu hari penuh dari hiruk-pikuk kota.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 185.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('pari', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-white shadow-md">Open Trip</span>
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Nusa Penida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Nusa Penida - 1D (Day Trip)</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Bali, Indonesia</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Eksplorasi satu hari penuh ke surga eksotis Nusa Penida Barat. Mengunjungi tebing ikonik Kelingking Beach, Broken Beach, serta pesona alam menakjubkan.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 350.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('nusapenida', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="private-trip" class="py-24 sm:py-32 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-sm font-bold text-blue-600 uppercase tracking-wider block mb-3">Custom & Exclusive</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">Ingin Liburan Lebih Private? Atur Sendiri Trip Impianmu!</h2>
+                    <a href="https://wa.me/62895369809676?text=Halo%20Dawnscape,%20saya%20tertarik%20tanya%20tentang%20Private%20Trip" target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-full shadow-lg transition-all">
+                        Konsultasi Private Trip (Gratis)
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80" alt="Private" class="w-full h-full object-cover rounded-3xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 sm:py-32 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl mb-12">
+                <span class="text-sm font-bold text-blue-400 uppercase tracking-widest block mb-3">Activities & Workshops</span>
+                <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">Our Premium Experiences</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 text-slate-800">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow-md">Experience</span>
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80" alt="Batik Painting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Batik Painting Experience</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Pulau Pari, Jakarta</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Ekspresikan kreativitas seni melukis kain menggunakan teknik canting tradisional dengan latar pesisir pantai.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 450.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('batik', 'experience')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 text-slate-800">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow-md">Experience</span>
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Sunset Yoga" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Sunset Beach Yoga</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Pulau Pari, Jakarta</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Harmonisasi pikiran, jiwa, dan tubuh lewat kelas yoga premium di tepi Pantai Pasir Perawan sembari menikmati matahari terbenam.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 350.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('yoga', 'experience')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 text-slate-800">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow-md">Experience</span>
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Coral Restoration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Coral Eco Restoration</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Pulau Harapan, Jakarta</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Berikan dampak nyata untuk bumi dengan ikut serta dalam proses pembibitan dan adopsi fragmen terumbu karang laut.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 500.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('coral', 'experience')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300 text-slate-800">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow-md">Experience</span>
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Seafood Cooking Class" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Coastal Seafood Cooking</h3>
+                            <p class="text-sm font-semibold text-slate-500 mb-4 flex items-center">📍 Pulau Sabesi, Lampung</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Belajar mengolah hasil tangkapan laut segar langsung dari nelayan lokal menggunakan resep bumbu rempah tradisional khas pesisir.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-xs font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 400.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('cooking', 'experience')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-medium">&copy; 2026 Dawn'Scape. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="itineraryModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="relative bg-white w-full max-w-4xl rounded-3xl overflow-hidden shadow-2xl transform scale-95 opacity-0 transition-all duration-300" id="modalBox">
+            
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-5 flex items-center justify-between text-white">
+                <div class="flex items-center space-x-2">
+                    <span id="modalBadge" class="hidden px-2.5 py-0.5 text-[10px] font-bold uppercase bg-white/20 text-white rounded-md">Experience</span>
+                    <h3 id="modalTripTitle" class="text-lg font-bold tracking-tight">Nama Item</h3>
+                </div>
+                <button onclick="tutupModal()" class="p-1 rounded-full bg-white/10 hover:bg-white/20 text-white font-bold transition-colors">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-6 md:p-8 max-h-[80vh] overflow-y-auto">
+                <div id="modalLayoutContainer" class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    
+                    <div id="experienceLeftSidebar" class="hidden md:col-span-4 space-y-6 border-r border-slate-100 pr-2">
+                        <div class="bg-slate-50 p-4 rounded-2xl space-y-3 border border-slate-100">
+                            <div class="flex items-center text-sm font-semibold text-slate-700">
+                                <span class="text-xl mr-3">⏱️</span> <span id="expDuration">-</span>
+                            </div>
+                            <div class="flex items-center text-sm font-semibold text-slate-700">
+                                <span class="text-xl mr-3">🗣️</span> <span id="expLanguage">-</span>
+                            </div>
+                            <div class="flex items-center text-sm font-semibold text-slate-700">
+                                <span class="text-xl mr-3">🍿</span> <span id="expSnack">-</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="p-3 bg-emerald-50 rounded-xl border border-emerald-100">
+                                <span class="block text-[10px] font-bold uppercase tracking-wider text-emerald-700">Include Transport</span>
+                                <div class="flex items-baseline space-x-2 mt-1">
+                                    <span id="priceIncStrike" class="text-xs text-slate-400 line-through">0</span>
+                                    <span id="priceIncReal" class="text-base font-bold text-slate-900">0</span>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-blue-50 rounded-xl border border-blue-100">
+                                <span class="block text-[10px] font-bold uppercase tracking-wider text-blue-700">Exclude Transport</span>
+                                <div class="flex items-baseline space-x-2 mt-1">
+                                    <span id="priceExcStrike" class="text-xs text-slate-400 line-through">0</span>
+                                    <span id="priceExcReal" class="text-base font-bold text-slate-900">0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-3.5 bg-amber-50 rounded-xl border border-amber-200/60 text-xs font-medium text-amber-800">
+                            ⚠️ <strong>Booking Note:</strong> <span id="expBookingRule">-</span>
+                        </div>
+                    </div>
+
+                    <div id="modalMainContent" class="md:col-span-12 space-y-6">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Description</h4>
+                            <p id="modalTripDesc" class="text-slate-600 font-light text-sm leading-relaxed"></p>
+                        </div>
+                        
+                        <div>
+                            <h4 id="itineraryHeader" class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Rencana Perjalanan</h4>
+                            <div id="timelineContent"></div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-slate-100">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-3 flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    Sudah Termasuk (Include)
+                                </h4>
+                                <ul id="modalInclude" class="text-xs font-medium text-slate-600 space-y-2 list-disc pl-4"></ul>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-rose-600 mb-3 flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    Belum Termasuk (Exclude)
+                                </h4>
+                                <ul id="modalExclude" class="text-xs font-medium text-slate-600 space-y-2 list-disc pl-4"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100 flex justify-end mt-6">
+                    <a id="modalBookingBtn" href="#" target="_blank" class="w-full sm:w-auto text-center inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-lg">
+                        Booking via WhatsApp Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function toggleMobileMenu() {
+        // Navigasi responsif jika diperlukan
+    }
+
+    // DATABASE OPEN TRIP (TOTAL KINI ADA 11 PRODUK)
+    const tripData = {
+        bromo: {
+            title: "Gunung Bromo - 1D (Day Trip)",
+            desc: "Menanti magis terbitnya matahari berlatar kaldera Bromo, melintasi lautan pasir yang luas, dan berdiri langsung di bibir kawah aktif yang spektakuler.",
+            include: ["Jeep Hardtop 4x4 Premium", "Tiket Masuk TN Bromo Tengger Semeru", "Driver profesional merangkap Fotografer", "BBM & Parkir", "Air Mineral"],
+            exclude: ["Sewa kuda di kaldera", "Makan pribadi & Tips Crew"],
+            itinerary: `
+                <div class="text-sm font-bold text-slate-800 mb-2">Rencana Perjalanan (Midnight Start):</div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li>00:00 - Penjemputan di Meeting Point (Malang/Pasuruan)</li>
+                    <li>03:00 - Tiba di transit area, pindah ke Jeep 4x4 menuju Penanjakan/Bukit Kingkong</li>
+                    <li>04:30 - Golden Sunrise Bromo Session</li>
+                    <li>06:30 - Turun ke Lembah Widodaren & Spot Foto bareng Jeep</li>
+                    <li>08:00 - Trekking mendaki Kawah Bromo & Pura Luhur Poten</li>
+                    <li>10:00 - Eksplorasi Pasir Berbisik & Bukit Teletubbies</li>
+                    <li>12:00 - Kembali ke Meeting Point asal. Trip Selesai.</li>
+                </ul>
+            `
+        },
+        canyon: {
+            title: "Canyoneering Adventure - 1D (Day Trip)",
+            desc: "Pacu adrenalin ekstrem menyusuri ngarai tersembunyi Bali, menuruni air terjun deras menggunakan tali (abseiling), melompat dari tebing, serta meluncur di perosotan air alami.",
+            include: ["Instruktur Canyoneering Bersertifikat ICOpro", "Peralatan keselamatan standar internasional (Wetsuit, Harness, Helm)", "Tiket masuk area ngarai & air terjun", "Makan siang buffet lokal", "Dokumentasi Foto & Video GoPro", "Asuransi aktivitas ekstrem"],
+            exclude: ["Transportasi penjemputan hotel (bisa request opsional)", "Tips instruktur"],
+            itinerary: `
+                <div class="text-sm font-bold text-slate-800 mb-2">Rencana Petualangan Ngarai:</div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li>08:00 - Tiba di Basecamp, pendaftaran & pembagian ukuran alat (Fittings)</li>
+                    <li>08:30 - Sesi training dasar penanganan tali dan teknik melompat aman</li>
+                    <li>09:00 - Trekking masuk menuju titik awal ngarai (Canyon Entry)</li>
+                    <li>09:30 - Memulai petualangan: Abseiling air terjun tinggi, jumps, & natural slides</li>
+                    <li>13:00 - Tiba di titik akhir ngarai (Canyon Exit) & kembali ke basecamp untuk mandi</li>
+                    <li>13:30 - Makan siang bersama sambil review dokumentasi seru.</li>
+                </ul>
+            `
+        },
+        menjangan: {
+            title: "Pulau Menjangan Snorkeling - 1D Day Trip",
+            desc: "Mengeksplorasi spot snorkeling terbaik di Bali Barat dengan keindahan dinding terumbu karang (coral wall) vertikal yang megah serta keanekaragaman biota laut yang sangat jernih.",
+            include: ["Kapal wisata boat tradisional PP pelabuhan", "Izin masuk Taman Nasional Bali Barat (TNBB)", "Alat snorkeling premium lengkap (Fin, Masker, Snorkel, Life Jacket)", "2x Sesi Snorkeling di spot berbeda", "Makan siang box & air mineral", "Guide Snorkeling / Under Water Guide"],
+            exclude: ["Tips Guide", "Kamera underwater (Sewa opsional)"],
+            itinerary: `
+                <div class="text-sm font-bold text-slate-800 mb-2">Agenda Kegiatan Snorkeling:</div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li>08:00 - Kumpul di Pelabuhan Lalang / Labuhan Lalang Bali Barat</li>
+                    <li>08:30 - Pembagian alat snorkeling & naik boat penyeberangan</li>
+                    <li>09:15 - Tiba di Spot 1: Coral Wall / Sandy Slope (Snorkeling session 1)</li>
+                    <li>11:00 - Istirahat & Makan siang santai di pesisir pos Pulau Menjangan</li>
+                    <li>12:30 - Menuju Spot 2: Cave Point / Mangrove Drop-off (Snorkeling session 2)</li>
+                    <li>14:30 - Kembali menyeberang ke pelabuhan utama. Kegiatan selesai.</li>
+                </ul>
+            `
+        },
+        balitour: {
+            title: "Bali City Tour - 4D 3N",
+            desc: "Eksplorasi mahakarya eksotis pulau Dewata secara lengkap. Mengunjungi pura magis di atas danau Bedugul, seni budaya Ubud, tebing Uluwatu, pantai pasir putih tersembunyi, hingga makan malam romantis di Jimbaran.",
+            include: ["Hotel Bintang 3 di area strategis (Kuta/Legian) selama 3 malam", "Mobil AC Nyaman + Driver + BBM sesuai rute", "Tiket masuk semua objek wisata sesuai brosur", "Makan sesuai jadwal (Sarapan di hotel, Makan Siang & Malam di Resto lokal)", "Makan malam romantis Seafood Jimbaran", "Air mineral harian"],
+            exclude: ["Tiket pesawat PP ke Bali", "Pengeluaran pribadi (Laundry, Minibar)", "Tips Driver/Guide"],
+            itinerary: `
+                <div class="text-sm font-bold text-slate-800 mb-2">Rencana Perjalanan 4 Hari 3 Malam:</div>
+                <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1">
+                    <li><strong>Hari 1:</strong> Arrival Bali -> Penjemputan di Bandara Ngurah Rai -> Pantai Melasti -> Sunset & Tari Kecak di Uluwatu -> Dinner Jimbaran -> Check-in Hotel.</li>
+                    <li><strong>Hari 2:</strong> Kintamani Highlands -> Desa Penglipuran -> Pura Tirta Empul Tampaksiring -> Belanja Oleh-oleh khas Bali.</li>
+                    <li><strong>Hari 3:</strong> Pura Ulun Danu Bedugul -> Joger Bali -> Sunset di Pura Tanah Lot -> Makan malam lokal.</li>
+                    <li><strong>Hari 4:</strong> Check-out hotel -> Pusat Kopi Bali -> Transfer out menuju Bandara untuk kepulangan.</li>
+                </ul>
+            `
+        },
+        peucang: {
+            title: "Pulau Peucang - 3D 2N",
+            desc: "Menikmati hamparan pasir putih, jernihnya air laut, serta keanekaragaman satwa liar khas Taman Nasional Ujung Kulon.",
+            include: ["Elf Executive AC PP Jakarta", "Kapal kayu wisata", "Penginapan AC/Fan", "Makan prasmanan 5x", "Alat snorkeling & Guide"],
+            exclude: ["Sewa kano Cigenter", "Tips Guide", "Keperluan pribadi"],
+            itinerary: `<div class="text-sm text-slate-700">Mepo malam hari dari Jakarta -> Penyeberangan kapal -> Eksplorasi savana satwa liar & pantai pasir putih murni Pulau Peucang selama 3 hari penuh.</div>`
+        },
+        sabesi: {
+            title: "Pulau Sabesi - 3D 2N",
+            desc: "Air laut sebening kristal, menghadirkan panorama bawah laut yang terlihat jelas dari permukaan tenang, bersih, dan begitu menawan.",
+            include: ["Transportasi PP", "Homestay", "Makan sesuai jadwal", "Kapal snorkeling", "Guide lokal"],
+            exclude: ["Pengeluaran pribadi"],
+            itinerary: `<div class="text-sm text-slate-700">Detail rencana perjalanan explore pesona Pulau Sabesi tersedia lengkap via kontak CS.</div>`
+        },
+        karimunjawa: {
+            title: "Pulau Karimun Jawa - 3D 2N",
+            desc: "Sebuah tropical sanctuary eksklusif dengan laut toska sebening kaca, pulau-pulau private berpasir putih halus, pengalaman snorkeling terbaik.",
+            include: ["Tiket Kapal Cepat PP", "Penginapan pilihan", "Makan prasmanan", "Sewa kapal & alat snorkeling", "Dokumentasi underwater"],
+            exclude: ["Tiket masuk menjangan besar (opsional)", "Tips crew"],
+            itinerary: `<div class="text-sm text-slate-700">Rencana petualangan pulau eksotis Karimun Jawa siap dikirimkan lengkap via WhatsApp.</div>`
+        },
+        harapan: {
+            title: "Pulau Harapan - 2D 1N",
+            desc: "Ketenangan dalam balutan suasana tropis yang elegan, di mana laut biru jernih berpadu dengan hamparan pulau kecil yang masih alami.",
+            include: ["Kapal penyeberangan PP", "Homestay AC", "Makan 3x", "Kapal snorkeling island hopping", "Alat snorkeling lengkap"],
+            exclude: ["Tips guide", "Water sport"],
+            itinerary: `<div class="text-sm text-slate-700">Jadwal jelajah pulau-pulau tak berpenghuni sekitar Pulau Harapan lengkap ada di admin.</div>`
+        },
+        baduy: {
+            title: "Baduy - 2D 1N",
+            desc: "Merasakan kearifan lokal yang bersahaja di desa adat Suku Baduy, menyatu dengan alam asli tanpa gawai, serta menikmati damainya kehidupan.",
+            include: ["Transportasi ELF PP", "Izin masuk desa adat", "Homestay rumah adat Baduy Dalam", "Makan 2x buatan warga lokal", "Tour Guide lokal"],
+            exclude: ["Ojek rute luar (opsional)", "Oleh-oleh madu/kain"],
+            itinerary: `<div class="text-sm text-slate-700">Rute trekking budaya menyusuri jembatan bambu & desa adat Baduy luar hingga dalam.</div>`
+        },
+        pari: {
+            title: "Pulau Pari - 1D (Day Trip)",
+            desc: "Sentuhan lembut Pasir Perawan berpadu harmoni dengan jernihnya laut toska. Pelarian satu hari penuh dari hiruk-pikuk kota.",
+            include: ["Tiket kapal PP Kali Adem", "Sewa sepeda seharian", "Alat snorkeling", "Makan siang box", "Tour guide"],
+            exclude: ["Tips", "Pengeluaran pribadi"],
+            itinerary: `<div class="text-sm text-slate-700">06:30 Standby Kali Adem -> Explore Pasir Perawan & Snorkeling -> 15:00 Kembali ke Jakarta.</div>`
+        },
+        nusapenida: {
+            title: "Nusa Penida - 1D (Day Trip)",
+            desc: "Eksplorasi satu hari penuh ke surga eksotis Nusa Penida Barat. Mengunjungi tebing ikonik Kelingking Beach, Broken Beach, serta pesona alam menakjubkan.",
+            include: ["Tiket Fastboat PP Sanur", "Mobil AC & Driver di Nusa Penida", "Tiket Masuk Wisata", "Makan Siang di Resto", "Guide / Driver Photographer"],
+            exclude: ["Transport ke pelabuhan Sanur", "Tips driver"],
+            itinerary: `<div class="text-sm text-slate-700">Sanur Crossing -> Kelingking Beach -> Paluang Cliff -> Broken Beach & Angel Billabong -> Return Sanur.</div>`
+        }
+    };
+
+    // DATABASE LAYOUT BROSUR EXPERIENCE
+    const experienceData = {
+        batik: {
+            title: "Batik Painting Experience",
+            badge: "Arts & Culture",
+            desc: "Traditional canvas and batik painting features prominent lines and illustrative contours. You will be drawing dots and lines of the resist with a spouted tool called a 'canting'.",
+            duration: "2.5 Hours Class",
+            language: "English / Bahasa",
+            snack: "Traditional Snacks & Fresh Coconut Water",
+            bookingRule: "2 days in advance booking is required.",
+            priceIncStrike: "Rp 550.000",
+            priceIncReal: "Rp 450.000",
+            priceExcStrike: "Rp 350.000",
+            priceExcReal: "Rp 290.000",
+            include: ["Traditional cloth canvas", "Wax-resist batik dyes", "Full use of Canting", "Experience certificate", "Take home your artwork creation"],
+            exclude: ["Personal souvenir purchases"],
+            itinerary: `<div class="text-sm text-slate-700">Sesi edukasi lilin malam -> Praktik mencanting pola di atas kain -> Pewarnaan kain -> Pelorotan lilin malam & Penyerahan sertifikat karya seni bawa pulang.</div>`
+        },
+        yoga: {
+            title: "Sunset Beach Yoga",
+            badge: "Wellness & Health",
+            desc: "Harmonize your mind, spirit, and body with our premium beachside yoga class. Feel the gentle breeze of Pasir Perawan beach as the expert instructor guides you through therapeutic movements.",
+            duration: "1.5 Hours Session",
+            language: "English / Bahasa",
+            snack: "Infused Water & Healthy Fruit Bowl",
+            bookingRule: "1 day in advance booking is required.",
+            priceIncStrike: "Rp 420.000",
+            priceIncReal: "Rp 350.000",
+            priceExcStrike: "Rp 280.000",
+            priceExcReal: "Rp 210.000",
+            include: ["Premium Yoga mat rental", "Professional Yoga instructor certified", "Fresh towel & cold mineral water", "Healthy beachside dinner bowl"],
+            exclude: ["Personal clothing/apparel"],
+            itinerary: `<div class="text-sm text-slate-700">Registrasi & Stretching -> Core Vinyasa Flow Session selaras ombak sore -> Meditasi kedamaian menyambut senja di tepi Pantai Pasir Perawan.</div>`
+        },
+        coral: {
+            title: "Coral Eco Restoration",
+            badge: "Nature & Conservation",
+            desc: "Make a direct and real impact for the underwater marine ecosystem. In this eco-experience, you will learn how to graft live coral fragments onto propagation structures.",
+            duration: "3 Hours Experience",
+            language: "English / Bahasa",
+            snack: "Local Hot Tea & Traditional Fried Banana",
+            bookingRule: "3 days in advance booking is required.",
+            priceIncStrike: "Rp 650.000",
+            priceIncReal: "Rp 500.000",
+            priceExcStrike: "Rp 400.000",
+            priceExcReal: "Rp 320.000",
+            include: ["Live coral fragment seed", "Adoption tag named after you", "Boat ride to restoration site", "Snorkeling gear & conservation guide", "E-Certificate of marine contributor"],
+            exclude: ["Kamera underwater rental"],
+            itinerary: `<div class="text-sm text-slate-700">Edukasi pelestarian terumbu karang -> Proses pengikatan fragmen karang dan penamaan tag besi -> Berlayar menanam bibit ke dasar laut -> Snorkeling tour edukatif.</div>`
+        },
+        cooking: {
+            title: "Coastal Seafood Cooking",
+            badge: "Culinary Experience",
+            desc: "Learn the culinary secret of island life. Master how to process and cook freshly caught sea fish and seafood using heritage coastal spices directly instructed by local culinary masters.",
+            duration: "2 Hours Session",
+            language: "English / Bahasa",
+            snack: "Free Flow Lime Juice & Appetizer Snack",
+            bookingRule: "1 day in advance booking is required.",
+            priceIncStrike: "Rp 480.000",
+            priceIncReal: "Rp 400.000",
+            priceExcStrike: "Rp 320.000",
+            priceExcReal: "Rp 250.000",
+            include: ["Fresh seafood ingredients", "All cooking tools and station", "Lunch banquet from your own creation", "Recipe note copy"],
+            exclude: ["Personal insurance"],
+            itinerary: `<div class="text-sm text-slate-700">Pemilihan bahan ikan tangkapan nelayan -> Meracik bumbu bakar/tumis rempah rahasia pesisir -> Proses memasak di tepi pantai -> Jamuan makan siang hasil masakan mandiri.</div>`
+        }
+    };
+
+    function bukaModal(key, type) {
+        const data = (type === 'trip') ? tripData[key] : experienceData[key];
+        if (!data) return;
+
+        const leftSidebar = document.getElementById('experienceLeftSidebar');
+        const mainContent = document.getElementById('modalMainContent');
+        const badgeElement = document.getElementById('modalBadge');
+        const headerLabel = document.getElementById('itineraryHeader');
+
+        document.getElementById('modalTripTitle').innerText = data.title;
+        document.getElementById('modalTripDesc').innerText = data.desc;
+        document.getElementById('timelineContent').innerHTML = data.itinerary;
+
+        if (type === 'experience') {
+            leftSidebar.classList.remove('hidden');
+            mainContent.classList.remove('md:col-span-12');
+            mainContent.classList.add('md:col-span-8');
+            
+            badgeElement.innerText = data.badge || "Experience";
+            badgeElement.classList.remove('hidden');
+            headerLabel.innerText = "What we'll do :";
+
+            document.getElementById('expDuration').innerText = data.duration;
+            document.getElementById('expLanguage').innerText = data.language;
+            document.getElementById('expSnack').innerText = data.snack;
+            document.getElementById('expBookingRule').innerText = data.bookingRule;
+            
+            document.getElementById('priceIncStrike').innerText = data.priceIncStrike;
+            document.getElementById('priceIncReal').innerText = data.priceIncReal;
+            document.getElementById('priceExcStrike').innerText = data.priceExcStrike;
+            document.getElementById('priceExcReal').innerText = data.priceExcReal;
+        } else {
+            leftSidebar.classList.add('hidden');
+            mainContent.classList.remove('md:col-span-8');
+            mainContent.classList.add('md:col-span-12');
+            
+            badgeElement.classList.add('hidden');
+            headerLabel.innerText = "Rencana Perjalanan / Itinerary";
+        }
+
+        let includeHtml = "";
+        if (data.include) {
+            data.include.forEach(item => { includeHtml += `<li>${item}</li>`; });
+        }
+        document.getElementById('modalInclude').innerHTML = includeHtml;
+
+        let excludeHtml = "";
+        if (data.exclude) {
+            data.exclude.forEach(item => { excludeHtml += `<li>${item}</li>`; });
+        }
+        document.getElementById('modalExclude').innerHTML = excludeHtml;
+
+        const waBaseUrl = "https://wa.me/62895369809676";
+        let textMessage = (type === 'experience') 
+            ? `Halo Dawn'scape, saya tertarik booking Experience: *${data.title}*.`
+            : `Halo Dawn'scape, saya tertarik booking Open Trip: *${data.title}*.`;
+        
+        document.getElementById('modalBookingBtn').href = `${waBaseUrl}?text=${encodeURIComponent(textMessage)}`;
+
+        const overlay = document.getElementById('itineraryModal');
+        const box = document.getElementById('modalBox');
+        overlay.classList.remove('hidden');
+        setTimeout(() => {
+            box.classList.remove('scale-95', 'opacity-0');
+            box.classList.add('scale-100', 'opacity-100');
+        }, 20);
+    }
+
+    function tutupModal() {
+        const overlay = document.getElementById('itineraryModal');
+        const box = document.getElementById('modalBox');
+        box.classList.remove('scale-100', 'opacity-100');
+        box.classList.add('scale-95', 'opacity-0');
+        setTimeout(() => { overlay.classList.add('hidden'); }, 300);
+    }
+
+    window.onclick = function(event) {
+        const overlay = document.getElementById('itineraryModal');
+        if (event.target === overlay) { tutupModal(); }
+    }
+</script>
+
+</body>
+</html>

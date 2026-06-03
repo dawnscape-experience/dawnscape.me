@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn'scape - Island Travel & Experience</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- ========================================== -->
+    <!-- NAVIGATION BAR                             -->
+    <!-- ========================================== -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-black text-slate-900 tracking-tight">Dawn'scape<span class="text-blue-600">.</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8 text-sm font-bold text-slate-600">
+                        <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
+                        <a href="#opentrip" class="hover:text-blue-600 transition-colors">Open Trip</a>
+                        <a href="#privatetrip" class="hover:text-blue-600 transition-colors">Private Trip</a>
+                        <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="https://wa.me/62895369809676" target="_blank" class="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-slate-900 hover:bg-slate-800 rounded-xl shadow-sm transition-all duration-200">Hubungi Kami</a>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="p-2 rounded-xl hover:bg-slate-100 text-slate-600 transition-colors">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- HERO SECTION                               -->
+    <!-- ========================================== -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center bg-slate-950 overflow-hidden pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1920&q=80" alt="Ocean Background" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/60 to-slate-50"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mt-12">
+            <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold bg-white/10 backdrop-blur-md text-blue-300 border border-white/10 mb-6 tracking-wide uppercase"> Pelarian Sempurna dari Hiruk Pikuk Kota</span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight mb-6"><br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-200 to-white">find light in very escape</span></h1>
+            <p class="max-w-2xl mx-auto text-base sm:text-xl font-medium text-slate-300 leading-relaxed mb-10">Jelajahi petualangan alam dan keindahan nusantara bersama Dawn'scape. Destinasi premium untuk Open Trip, Private Trip, dan Premium Experience.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#opentrip" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 rounded-xl shadow-lg shadow-blue-500/20 transition-all duration-200">Eksplor Paket Trip</a>
+                <a href="#experience" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-900 bg-white hover:bg-slate-100 rounded-xl shadow-sm transition-all duration-200">Premium Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- OPEN TRIP SECTION                          -->
+    <!-- ========================================== -->
+    <section id="opentrip" class="py-24 sm:py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-16 sm:mb-20">
+                <span class="text-sm font-bold text-blue-600 uppercase tracking-wider block mb-3">Schedules</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Paket Open Trip Unggulan</h2>
+                <p class="text-lg text-slate-600 font-medium">Gabung bersama petualang lainnya dan nikmati keseruan mengeksplorasi destinasi impian dengan katalog terlengkap kami.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Gunung Prau -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">3D 2N</span>
+                        <img src="https://images.unsplash.com/photo-1571738318198-fda6afce5348?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3VudW5nJTIwcHJhdXxlbnwwfHwwfHx8MA%3D%3D">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Gunung Prau - 3D 2N</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Alun-Alun Pamulang</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Nikmati pesona Golden Sunrise legendaris Gunung Prau dengan pemandangan megah berlatar jajaran Gunung Sindoro dan Sumbing.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 800.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('prau', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Gunung Bromo -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">1D Day Trip</span>
+                        <img src="https://plus.unsplash.com/premium_photo-1697729935951-420138024919?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJvbW98ZW58MHx8MHx8fDA%3D">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2"> Bromo - 1D</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Kota Malang</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Berburu golden sunrise Bromo, menjelajahi Bukit Widodaren, Kawah Bromo, Pasir Berbisik, dan Bukit Teletubbies dengan Jeep.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 350.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('bromo', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Canyoneering Adventure -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">1D Extreme</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/709881324_122123609205225342_6095738666941416322_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=j3BRD8CCyNkQ7kNvwFnYdNw&_nc_oc=AdqkS0ldZSJdmXrn3Wj6JLYOLVxwPJeCpreo7GIZKgrrmD8g5NPacoUFcfwzQh8-fDkKC-6UZ7_o6_c9z20bXyL9&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=64-pk1zs4PsSeBvbjr5MFA&_nc_ss=7b2a8&oh=00_Af-lt1IiSd5AFdWkWluX_fmjAKpMw68AnaQTBG2v_56MOQ&oe=6A22609A">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Canyoneering Adventure</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Pamulang / Bojong Sari</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Pacu adrenalin lewat aktivitas ekstrem menuruni air terjun Curug Cikondang Cianjur menggunakan tali pengaman.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 600.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('canyon', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Pulau Menjangan -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">1D Snorkeling</span>
+                        <img src="https://images.unsplash.com/photo-1682687982107-14492010e05e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZnJlZSUyMGRpdmluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Pulau Menjangan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Menjangan - 1D</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Pelabuhan Labuan Lalang</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Eksplorasi Coral Wall bawah laut Bali Barat yang memukau dan sapa kawanan rusa menjangan liar langsung di pulau.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 370.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('menjangan', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Bali City Tour -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">4D 3N</span>
+                        <img src="https://scontent.fcgk27-1.fna.fbcdn.net/v/t39.30808-6/712663926_122123710809225342_7667429388580473183_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cEj_kr3f6SwQ7kNvwGUAzSB&_nc_oc=AdqX_EZGi_f6n2LJYavW7XvFJLinobivpBBra9b5raMIN3p8yco8aXQTXOl1jHXwBJM&_nc_zt=23&_nc_ht=scontent.fcgk27-1.fna&_nc_gid=fGPeOkqgdQGM8h0Kaoinwg&_nc_ss=7b2a8&oh=00_Af9L_SeMBTG3FqxDd4xfqrbW6JoBWOlwo-MNKmDLN_oz2w&oe=6A236F25">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Bali City Tour - 4D 3N</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Bandara Ngurah Rai (DPS)</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Paket liburan lengkap menjelajahi Uluwatu, Tari Kecak, Jimbaran Seafood, Rafting Ubud, hingga Desa Penglipuran.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 2.671.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('balitour', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Pulau Peucang -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">3D 2N</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/713903477_122123607357225342_5527102945006040880_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_1PndEnRGn0Q7kNvwEljRi3&_nc_oc=AdrDeaUb2JLgqX2q5Yld7npHWJOF333I_KCKWwqHK6aokt_8-B1SOm1yqfqsO7C6cARiL_y9M9QrvEqSb12PUYQQ&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=V_mrIPaS_MyXBBvblL5BrQ&_nc_ss=7b2a8&oh=00_Af-V7pkykzfF45Yy_ZYtOJuDAsXLNjVXxPSuSgr4FJo42A&oe=6A223FAF" alt="Pulau Peucang" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Peucang - 3D 2N</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Multi-Mepo Jakarta/Banten</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Eksplorasi situs warisan dunia Ujung Kulon, mengunjungi Savana Cidaon, Karang Copong, dan pohon purba Kiara.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 750.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('peucang', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Pulau Sebesi -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">3D 2N</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/709821658_122123608629225342_3871790027918732132_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=-5YKR8MgjLUQ7kNvwF8CIq1&_nc_oc=AdpnJuOvme7SFkHIOXyrEH9GKNmxYeOowU6I4V4TaFYsnm3lmzvf7nC57lrt9TEyKUg8k6mym0Qohdr2DRqUxeVN&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=Cgy03a8BG2mLMMxyWrEcUw&_nc_ss=7b2a8&oh=00_Af8apWZzBIacC5ImExs-_LhH8GzYVhtwjbrS_RX5CK29iQ&oe=6A2272DB" alt="Pulau Sebesi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Sebesi - 3D 2N</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Multi-Mepo Jkt/Lampung</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Jelajahi pulau vulkanik, snorkeling terumbu karang hidup Geligi, dan rasakan sensasi trekking legendaris Gunung Anak Krakatau.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 675.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('sabesi', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Karimunjawa -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">3D 2N</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/710058987_122123609409225342_8804355375192979382_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=99085hinpvsQ7kNvwG-j3GR&_nc_oc=AdqVAsixCq-9RpmzyD1r9loMqWf2hm12atsj_e2XnYUBGr8oDdIRe5lXLZZqgJM-HSxhIfPvyLUPbtqUaKFkz8dn&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=d2GSNdTxzbcrvMUOoqBGrA&_nc_ss=7b2a8&oh=00_Af9XZ6IqfJgWceXcsHfvnbcZ9VCrOayMH76XoS8sDiP63A&oe=6A22761E" alt="Karimunjawa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Karimun Jawa - 3D 2N</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Pelabuhan Kartini, Jepara</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Eksplorasi surga bawah laut Jawa, snorkeling di Secret Garden, berfoto di Bukit Love, dan menikmati sunset Pantai Tanjung Gelam.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 805.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('karimunjawa', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Pulau Harapan -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">2D 1N</span>
+                        <img src="https://images.unsplash.com/photo-1703337419592-c0caade6af83?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI5fHx8ZW58MHx8fHx80" alt="Pulau Harapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Harapan - 2D 1N</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Pelabuhan Muara Angke</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Island hopping seru ke Dolphin Island & Gosong Perak, BBQ malam di pulau, dan edukasi konservasi penyu laut.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 418.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('harapan', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Wisata Adat Baduy -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">2D 1N Adat</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/710481943_122123606853225342_295149094259610661_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vd7ZRwAVkoQQ7kNvwGON-Rc&_nc_oc=Adpb33dtT4QN4fmEXkdU48RbdoZN3aSepPNGcDxtP9DIAzcgBkMD3pzZHaUsvF6aSH9skmfm30oDw_TDrt8vidcU&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=3Pnm1lhAP1sZJamLBegxGA&_nc_ss=7b2a8&oh=00_Af_M4Rx-YGK29nux12NO-a2QAJVDQqbGKJ_90E7KZB-wVw&oe=6A226903" alt="Suku Baduy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Wisata Adat Baduy - 2D 1N</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Stasiun Rangkasbitung</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Rasakan petualangan trekking budaya, merasakan kedamaian hidup tanpa teknologi modern di jantung Baduy Dalam.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 250.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('baduy', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Pulau Pari -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">1D Day Trip</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/709882828_122123606997225342_3878223242384023577_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=j4ms978NMdkQ7kNvwEDnrqA&_nc_oc=Adry8LFif3OylmQV-sv3HlfreIw6r5TE5P5kGm8lWAuDpO8sO0OvcUWlvo6LaZpqCCtYe1-piapkTH4x9uhVQeDX&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=JxBZ9IfsVb6erBFRHqD7iQ&_nc_ss=7b2a8&oh=00_Af8ENTWxI9FPQICKbPURJ5uFkvb00tr9o0RStY-2FdgRqQ&oe=6A224441" alt="Pulau Pari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Pulau Pari - 1D Day Trip</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Pelabuhan Muara Kamal</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Liburan singkat melarikan diri dari kesibukan kota ke pasir putih Pantai Pasir Perawan dan ekosistem laut asri.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 180.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('pari', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Nusa Penida -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white/90 backdrop-blur-sm text-slate-900 shadow-sm">1D Day Trip</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/711475333_122123607675225342_5790757731190622585_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=5LhRaYOXKSIQ7kNvwH12qhC&_nc_oc=AdrEMI_wYce_oxXGWnLYyTbM_OwpAdMXC7ulX4i0rnyJUQfTC_0Y3KehiIkpXRr0LI2NgTxY-5Fw69s5_SRY5Bj9&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=6ha_qrAD7zb3tLU9WlorWQ&_nc_ss=7b2a8&oh=00_Af-rItA3aV7G2L6YGKIg_fPcahtavCBkXVpTcK2t5b64-A&oe=6A2270CD" alt="Nusa Penida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6 sm:p-8">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Nusa Penida - 1D</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4 flex items-center gap-1">📍 Pelabuhan Sanur, Bali</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Saksikan kemegahan tebing Kelingking Beach yang ikonik menyerupai T-Rex, Broken Beach, serta Angel's Billabong.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Mulai Dari</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 600.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('nusapenida', 'trip')" class="px-5 py-2.5 text-sm font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- PRIVATE TRIP SECTION                       -->
+    <!-- ========================================== -->
+    <section id="privatetrip" class="py-24 sm:py-32 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-10">
+            <div class="absolute top-[-10%] left-[-10%] w-[40rem] h-[40rem] bg-blue-500 rounded-full blur-[128px]"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-16">
+                <span class="text-sm font-bold text-blue-400 uppercase tracking-wider block mb-3">Custom Journey</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Eksklusivitas Tanpa Batas</h2>
+                <p class="text-lg text-slate-400 font-medium">Atur sendiri tanggal keberangkatan, rute, fasilitas, serta rombongan liburan Anda tanpa harus digabung dengan orang asing.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-950/40 backdrop-blur-md border border-white/5 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Family Gathering</h3>
+                        <p class="text-slate-400 text-sm font-light mb-6">Momen kebersamaan keluarga besar yang dirancang penuh kehangatan, lengkap dengan fasilitator dokumentasi & gala dinner.</p>
+                    </div>
+                    <a href="https://wa.me/62895369809676?text=Halo%20Dawn%27scape%2C%20saya%20tertarik%20tanya%20paket%20Private%20Trip%20*Family%20Gathering*." target="_blank" class="w-full inline-flex items-center justify-center px-5 py-3 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors">Tanya Paket</a>
+                </div>
+                <div class="bg-slate-950/40 backdrop-blur-md border border-white/5 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Corporate Outing</h3>
+                        <p class="text-slate-400 text-sm font-light mb-6">Meningkatkan keakraban tim kerja perusahaan lewat rangkaian aktivitas team building seru di alam terbuka berfasilitas VIP.</p>
+                    </div>
+                    <a href="https://wa.me/62895369809676?text=Halo%20Dawn%27scape%2C%20saya%20tertarik%20tanya%20paket%20Private%20Trip%20*Corporate%20Outing*." target="_blank" class="w-full inline-flex items-center justify-center px-5 py-3 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors">Tanya Paket</a>
+                </div>
+                <div class="bg-slate-950/40 backdrop-blur-md border border-white/5 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Honeymoon Package</h3>
+                        <p class="text-slate-400 text-sm font-light mb-6">Perjalanan romantis berdua bersama pasangan terkasih dengan akomodasi resort pinggir pantai bergaya privat dan syahdu.</p>
+                    </div>
+                    <a href="https://wa.me/62895369809676?text=Halo%20Dawn%27scape%2C%20saya%20tertarik%20tanya%20paket%20Private%20Trip%20*Honeymoon*." target="_blank" class="w-full inline-flex items-center justify-center px-5 py-3 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors">Tanya Paket</a>
+                </div>
+                  <div class="bg-slate-950/40 backdrop-blur-md border border-white/5 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Frienship Trip</h3>
+                        <p class="text-slate-400 text-sm font-light mb-6">Perjalanan seru bersama sahabat untuk menikmati momen kebersamaan, eksplorasi destinasi hits, dan aktivitas fun yang bikin bonding makin erat. dengan konsep yang fleksibel, dan pengalaman tak terlupakan bareng teman-teman terbaikmu.</p>
+                    </div>
+                    <a href="https://wa.me/62895369809676?text=Halo%20Dawn%27scape%2C%20saya%20tertarik%20tanya%20paket%20Private%20Trip%20*Honeymoon*." target="_blank" class="w-full inline-flex items-center justify-center px-5 py-3 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-colors">Tanya Paket</a>
+                    </div>
+               
+                <div>   
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- SECTION EXPERIENCE                         -->
+    <!-- ========================================== -->
+    <section id="experience" class="py-24 sm:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-16">
+                <span class="text-sm font-bold text-blue-600 uppercase tracking-wider block mb-3">Premium Experience</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Aktivitas & Workshop Eksklusif</h2>
+                <p class="text-lg text-slate-600 font-medium">Rasakan pengalaman lokal otentik dan aktivitas seru yang dirancang khusus untuk memperkaya cerita perjalanan Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Experience 1: SURFING CLASS -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-indigo-600 text-white shadow-md">Experience</span>
+                        <img src="https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/710687530_122123609319225342_2373097333717537775_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JRPFmT1VPwQQ7kNvwGA058V&_nc_oc=AdrVo4tBhvSCZwLe-0ENzlt2c8UxucbJBTQsOuxyS7FoYdGPZknJIuicjz1IuotHiEuUgvG_SlbOz8UywBn-KXe_&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=mtOJ0qmVmI2YNvMlPZR80g&_nc_ss=7b2a8&oh=00_Af9mloVIu36WQxyA-RMhqtQaKMffRxwamRRfxWg9gw6MiQ&oe=6A228F02" alt="Batik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Surfing Class</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4">📍 CANGGU . BALI</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Rasakan sensasi berbeda belajar menaklukkan ombak lewat Surfing Class Experience yang seru dan aman untuk semua level.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 562.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('Surfing', 'experience')" class="px-5 py-2.5 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: COOKING CLASS -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-indigo-600 text-white shadow-md">Experience</span>
+                        <img src="https://scontent.fcgk27-2.fna.fbcdn.net/v/t39.30808-6/712445137_122123711097225342_3945217676055818455_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ELVEqo80z-8Q7kNvwEuCkzo&_nc_oc=Adon-dLzf0a6UsX2jCAYBBGun4VR7xUPKDDwNyts0xePcCWyxOyVeHJUsQQqlgvwYjU&_nc_zt=23&_nc_ht=scontent.fcgk27-2.fna&_nc_gid=VeSyHegWCZYUquW_RfxE1A&_nc_ss=7b2a8&oh=00_Af_Dfl_zj3iW9UoXfDr56ivDFtfC-3CiRbFvVSc3hXCkCA&oe=6A2372F2" alt="Yoga" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Cooking Experience</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4">📍 Privat Area Pantai</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Mengajak kamu menyelami budaya lokal lewat cita rasa, bukan hanya sekadar memasak, tapi sebuah perjalanan rasa yang membuat kamu merasakan langsung kehidupan dan kelezatan khas Bali..</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 320.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('Cooking', 'experience')" class="px-5 py-2.5 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: ATV JOURNEY   -->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-indigo-600 text-white shadow-md">Experience</span>
+                        <img src="https://scontent.fcgk27-2.fna.fbcdn.net/v/t39.30808-6/711886318_122123617749225342_5241467487288745809_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rpZSxLkMN9gQ7kNvwFd3oCZ&_nc_oc=AdqdeMnc9M5L9vXlfVuKnc5-tC9tF41am4IINmp61TUAM08QrK16T1H3Jut2K8yLEwk&_nc_zt=23&_nc_ht=scontent.fcgk27-2.fna&_nc_gid=gk0DLg462mDlV8aNnaXq9w&_nc_ss=7b2a8&oh=00_Af_2hTrwAfoZP0HgrVR0LoHxHH0kWsYVs9EtNn4KAolCww&oe=6A2315C1" alt="Coral Restoration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">ATV Journey</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4">📍 UBUD . BALI</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Rasakan sensasi petualangan seru menjelajahi alam Bali dengan ATV Journey, pengalaman off-road yang memadukan adrenalin, alam, dan keseruan dalam satu perjalanan tak terlupakan..</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 650.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('ATV', 'experience')" class="px-5 py-2.5 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+   <!-- Experience 4: Treeking-->
+                <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-indigo-600 text-white shadow-md">Experience</span>
+                        <img src="https://scontent.fcgk27-2.fna.fbcdn.net/v/t39.30808-6/712764142_122123676495225342_5773936924268988738_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=957ioXNowIAQ7kNvwEuV3L_&_nc_oc=AdrZtvT7NVi2H1hL_-iZ5mb6xDRWKnJF6nMLIndr-hDjDGWi4RdfkLEdeVPwkWBuMW0&_nc_zt=23&_nc_ht=scontent.fcgk27-2.fna&_nc_gid=CK94nnsfXobjvRBU3ub0MA&_nc_ss=7b2a8&oh=00_Af9-8ubnyaUP9JDhcp_NvDkoPE92CuILfa7mwZDNWyeOpA&oe=6A22FCB2" alt="Batik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Mount Batur Sunrise Trekking & Breakfast Experience</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4">📍 KINTAMANI . BALI</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3">Mulai petualanganmu sebelum fajar dan mendaki Gunung Batur yang ikonik untuk menyaksikan salah satu matahari terbit paling menakjubkan di Bali. Setelah sampai di puncak, nikmati sarapan hangat di atas awan sambil menikmati pemandangan Danau Batur dan pegunungan sekitarnya. Perpaduan sempurna antara petualangan, alam, dan momen tak terlupakan.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 625.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('Treeking', 'experience')" class="px-5 py-2.5 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+    <!-- Experience 5: Rafting-->
+                    <div class="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-100 transition-all duration-300">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
+                        <span class="absolute top-4 left-4 z-10 inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-indigo-600 text-white shadow-md">Experience</span>
+                        <img src="https://plus.unsplash.com/premium_photo-1661891887710-0528c1d76b92?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Batik" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Rafting Experience</h3>
+                            <p class="text-xs font-semibold text-slate-500 mb-4">📍 UBUD . BALI</p>
+                            <p class="text-slate-600 text-sm font-light mb-6 line-clamp-3"> Rasakan sensasi petualangan air yang memacu adrenalin dalam Rafting Experience, aktivitas seru menyusuri derasnya aliran sungai bersama tim profesional. Cocok untuk kamu yang ingin menikmati kombinasi antara tantangan, keseruan, dan keindahan alam tropis Indonesia.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                            <div>
+                                <span class="block text-[10px] font-bold text-slate-400">MULAI DARI</span>
+                                <span class="text-xl font-extrabold text-slate-900">Rp 390.000<span class="text-xs font-normal text-slate-500">/pax</span></span>
+                            </div>
+                            <button onclick="bukaModal('Rafting', 'experience')" class="px-5 py-2.5 text-sm font-bold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-colors">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- WADAH MODAL UTAMA                          -->
+    <!-- ========================================== -->
+    <div id="itineraryModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6 bg-slate-950/40 backdrop-blur-sm transition-all duration-300">
+        
+        <!-- LAYOUT A: MODAL OPEN TRIP -->
+        <div id="modalBoxTrip" class="relative w-full max-w-2xl bg-white rounded-[32px] shadow-2xl border border-slate-100 overflow-hidden transform scale-95 opacity-0 transition-all duration-300 flex flex-col max-h-[85vh] hidden">
+            <div class="relative h-48 sm:h-64 bg-slate-900 flex-shrink-0">
+                <img id="modalImgTrip" src="" alt="Trip Header" class="w-full h-full object-cover opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                <button onclick="tutupModal()" class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white transition-colors">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+                <div class="absolute bottom-6 left-6 right-6">
+                    <h3 id="modalTitleTrip" class="text-xl sm:text-2xl font-extrabold text-white tracking-tight mb-2"></h3>
+                    <div class="text-xs font-semibold text-slate-300 bg-white/10 backdrop-blur-sm p-3 rounded-xl inline-block max-w-full">
+                        <span id="modalMeetingPointText" class="block leading-relaxed">📍 Meeting Point</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 overflow-y-auto p-6 sm:p-8 space-y-6">
+                <div>
+                    <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Rencana Perjalanan (Itinerary)</h4>
+                    <div id="modalItinerary" class="relative pl-2 border-l-2 border-slate-100 space-y-4"></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+                    <div>
+                        <h4 class="text-xs font-bold text-emerald-600 uppercase tracking-wider mb-3">Termasuk (Include)</h4>
+                        <ul id="modalInclude" class="text-sm text-slate-600 space-y-2 font-medium border-l-2 border-emerald-100 pl-3"></ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-rose-500 uppercase tracking-wider mb-3">Tidak Termasuk (Exclude)</h4>
+                        <ul id="modalExclude" class="text-sm text-slate-600 space-y-2 font-medium border-l-2 border-rose-100 pl-3"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="p-6 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 flex-shrink-0">
+                <div>
+                    <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Investasi Liburan</span>
+                    <span id="modalPriceTrip" class="text-2xl font-extrabold text-slate-900"></span>
+                </div>
+                <a id="modalBookingBtnTrip" href="#" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-lg shadow-blue-500/20 transition-all duration-200">Pesan Sekarang via WA</a>
+            </div>
+        </div>
+
+        <!-- LAYOUT B: BROSUR MODERN 3 KOLOM (EXPERIENCE) -->
+        <div id="modalBoxExp" class="relative w-full max-w-5xl bg-white rounded-[32px] shadow-2xl border border-slate-100 overflow-hidden transform scale-95 opacity-0 transition-all duration-300 flex flex-col max-h-[90vh] hidden">
+            <button onclick="tutupModal()" class="absolute top-5 right-5 z-50 w-11 h-11 flex items-center justify-center bg-slate-900/10 hover:bg-slate-900/20 backdrop-blur-md rounded-full text-slate-700 transition-colors">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <div class="flex-1 overflow-y-auto p-6 sm:p-8 md:p-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-10">
+                    <div class="lg:col-span-4 flex flex-col space-y-5">
+                        <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 shadow-sm flex-shrink-0">
+                            <img id="modalImgMainExp" src="" alt="Main Cover" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200/50 space-y-3">
+                            <div class="flex items-center text-slate-600 text-sm font-medium">
+                                <span class="w-6 text-base">⏱️</span><span id="modalDurationExp" class="text-slate-700 font-semibold"></span>
+                            </div>
+                            <div class="pt-2 border-t border-slate-200">
+                                <span class="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Harga Aktivitas</span>
+                                <span id="modalPriceIncExp" class="text-xl font-extrabold text-indigo-600"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider block mb-1">Dawn Experience</span>
+                            <h3 id="modalTitleExp" class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight"></h3>
+                        </div>
+                        <div class="space-y-3">
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Tentang Aktivtas</h4>
+                            <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+                                <div id="modalTodoExp" class="space-y-4 text-sm text-slate-700"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 flex flex-col justify-between space-y-6 bg-slate-50/60 rounded-2xl p-6 border border-slate-100">
+                        <div class="space-y-4">
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Apa Saja Yang Didapat:</h4>
+                            <ul id="modalProvideExp" class="text-xs text-slate-600 space-y-3 font-medium"></ul>
+                        </div>
+                        <div class="pt-6 border-t border-slate-200/80">
+                            <a id="modalBookingBtnExp" href="#" target="_blank" class="w-full inline-flex items-center justify-center px-5 py-3.5 text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-lg shadow-indigo-500/20 transition-all duration-200 tracking-wide uppercase text-center">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- DATABASE JAVASCRIPT KOMPLIT DAN FIX        -->
+    <!-- ========================================== -->
+    <script>
+        const databaseProduk = {
+            prau: {
+                title: "Gunung Prau - 3D 2N",
+                price: "Rp 800.000",
+                meetingPoint: "Alun - Alun Pamulang",
+                img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
+                itinerary: [
+                    { time: "Hari 1 - 20.00 - 21.00", activity: "Berkumpul di meeting point utama, registrasi ulang, perkenalan tim, dan memulai perjalanan malam darat menuju dataran tinggi Dieng." },
+                    { time: "Hari 2 - 09.00 - 11.00", activity: "Tiba di basecamp Dieng, pembagian logistik tim, istirahat sejenak, proses registrasi simaksi, dan persiapan fisik untuk pendakian." },
+                    { time: "Hari 2 - 11.00 - 15.00", activity: "Mulai trekking santai mendaki Gunung Prau melalui jalur resmi, menikmati bentang alam vegetasi pinus hingga sampai ke area punggungan bukit." },
+                    { time: "Hari 2 - 15.00 - 20.00", activity: "Tiba di area camping ground puncak, pembagian tenda kelompok, free time hunting foto, makan malam hangat bersama, dan istirahat malam." },
+                    { time: "Hari 3 - 04.00 - 05.00", activity: "Bangun pagi menyambut Golden Sunrise legendaris Gunung Prau yang berlatar belakang siluet megah Gunung Sindoro, Sumbing, Merapi, dan Merbabu." },
+                    { time: "Hari 3 - 07.00 - 10.00", activity: "Kembali ke tenda, sarapan pagi kelompok, packing barang pribadi serta sampah tim, dan trekking turun kembali menuju basecamp utama." },
+                    { time: "Hari 3 - 12.00 - 14.00", activity: "Tiba di basecamp, bersih-bersih badan, makan siang lokal, dan melakukan perjalanan pulang kembali menuju kota asal. Trip selesai." },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis, dapat berubah sewaktu-waktu menyesuaikan situasi, cuaca, dan kondisi aktual di lapangan." }
+                ],
+                include: ["Transportasi PP AC dari meeting point", "Simaksi / Tiket Masuk Resmi Gunung Prau", "Tenda & Alat Masak kelompok", "Makan 3x selama masa pendakian", "Guide Pendakian & Porter Kelompok", "Asuransi Wisata Gunung"],
+                exclude: ["Porter pribadi pembawa tas sendiri", "Sleeping bag & matras pribadi", "Pengeluaran personal & Tipping Crew"]
+            },
+            bromo: {
+                title: "Gunung Bromo - 1D (Day Trip)",
+                price: "Rp 350.000",
+                meetingPoint: "Kota Malang (Hotel / Stasiun / Bandara)",
+                img: "https://images.unsplash.com/photo-1565619109666-b8bfe0e95ceb?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJyb21vfGVufDB8fDB8fHww",
+                itinerary: [
+                    { time: "00.00 - 01.00", activity: "Proses penjemputan peserta di area meeting point Kota Malang sesuai titik kesepakatan menggunakan kendaraan transit." },
+                    { time: "01.30 - 03.00", activity: "Perjalanan malam menuju area transit jeep di tumpang/sukapura, pindah kendaraan ke Jeep 4x4 untuk jalur ekstrem Bromo." },
+                    { time: "04.00 - 06.00", activity: "Tiba di Sunrise Point (Penanjakan/Kingkong Hill), menikmati golden sunrise Bromo spot hunter dan sesi foto udara berlatar Gunung Batok dan Semeru." },
+                    { time: "06.00 - 11.00", activity: "Turun ke lautan pasir, trekking atau sewa kuda menuju Kawah Bromo, eksplorasi Pura Luhur Poten, Bukit Widodaren, Pasir Berbisik, dan padang sabana Bukit Teletubbies." },
+                    { time: "11.00 - 13.00", activity: "Kembali ke tempat transit kendaraan semula, istirahat singkat, dan perjalanan kembali menuju pusat kota Malang." },
+                    { time: "13.00", activity: "Tiba kembali di Kota Malang, pengantaran peserta ke stasiun/hotel, dan trip dinyatakan selesai." },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis, dapat berubah sewaktu-waktu menyesuaikan situasi, cuaca, dan kondisi aktual di lapangan." }
+                ],
+                include: ["Jeep Bromo 4x4 Khusus Bromo", "Tiket Masuk TNBTS", "BBM & Retribusi Parkir", "Air Mineral Botol", "Penjemputan PP Kota Malang"],
+                exclude: ["Makan selama perjalanan", "Sewa kuda di kawah Bromo", "Pengeluaran pribadi & Tipping Driver"]
+            },
+            canyon: {
+                title: "Canyoneering Adventure - 1D",
+                price: "Rp 600.000",
+                meetingPoint: "Alun - Alun Pamulang / MCD Bojong Sari",
+                img: "https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/712468865_122123608191225342_8550902037492402685_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=rdhdG6BGQDcQ7kNvwF6YV8A&_nc_oc=Adpjfq8TSBZQUUbYSSosx7FbzvqfamLQoa08i-UyGutCi98kNwhg-y5_BbD7J6xdEh8LH1_f7dfQX5bGOnmCFP_n&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=qzJTWyooGGNWlaxlWqChhQ&_nc_ss=7b2a8&oh=00_Af96q2sdCyH7qW27TmZMMHJhmMy1hczdv8fGoyiMlMicHQ&oe=6A225876",
+                itinerary: [
+                    { time: "04.00 - 04.15", activity: "Absensi dan kumpul di Meeting Point utama Alun-Alun Pamulang atau spot kedua McD Bojong Sari." },
+                    { time: "04.15 - 10.00", activity: "Perjalanan darat via tol menuju basecamp Curug Cikondang, Kabupaten Cianjur." },
+                    { time: "10.00 - 10.30", activity: "Tiba di lokasi, safety briefing, pembagian alat canyoneering berstandar internasional (harness, helmet, wetsuite)." },
+                    { time: "10.30 - 12.00", activity: "Aktivitas ekstrem canyoneering: menuruni derasnya tebing air terjun Curug Cikondang menggunakan teknik rapeling tali pengaman." },
+                    { time: "12.00 - 13.00", activity: "Selesai aktivitas, bersih-bersih badan, mandi, dan menikmati hidangan makan siang masakan Sunda lokal." },
+                    { time: "13.00 - 14.00", activity: "Packing ulang barang bawaan dan persiapan mobilisasi menuju sentra oleh-oleh." },
+                    { time: "14.30 - 15.30", activity: "Singgah di pusat jajanan tradisional khas Cianjur untuk berbelanja (opsional)." },
+                    { time: "15.30 - 21.00", activity: "Perjalanan kembali menuju Jabodetabek. Estimasi tiba malam hari di titik awal, trip selesai." },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis, dapat berubah sewaktu-waktu menyesuaikan situasi, cuaca, dan kondisi aktual di lapangan." }
+                ],
+                include: ["Transportasi AC PP", "Driver, BBM & Tol Lengkap", "Asuransi Aktivitas", "Makan Siang Prasmanan", "Dokumentasi Foto Lapangan", "Tour Leader Pendamping", "Alat Safety & Instruktur Canyoning"],
+                exclude: ["Dokumentasi video drone udara khusus", "Belanja pribadi & Tipping Crew"]
+            },
+            menjangan: {
+                title: "Pulau Menjangan - 1D Day Trip",
+                price: "Rp 370.000",
+                meetingPoint: "Pelabuhan Labuan Lalang, Bali Barat",
+                img: "https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=800&q=80",
+                itinerary: [
+                    { time: "07.30 - 08.00", activity: "Kumpul di Pelabuhan Labuan Lalang, pengurusan izin masuk taman nasional, dan pemilihan ukuran alat snorkel." },
+                    { time: "08.00 - 08.45", activity: "Sailing menggunakan kapal boat motor tradisional membelah selat menuju Pulau Menjangan." },
+                    { time: "09.00 - 11.30", activity: "Aktivitas Snorkeling Sesi 1 di spot Coral Wall, melihat keindahan tebing terumbu karang vertikal dan biota laut." },
+                    { time: "11.30 - 12.30", activity: "Mendarat di dermaga pulau, makan siang paket box, santai di pesisir, dan hunting foto bersama rusa menjangan liar." },
+                    { time: "12.30 - 14.00", activity: "Kembali ke laut untuk Snorkeling Sesi 2 di Mangrove Point atau Cave Spot untuk melihat kawanan ikan hias." },
+                    { time: "14.00 - 15.00", activity: "Sailing kembali ke Pelabuhan Labuan Lalang, mandi/bilas tubuh, dan trip selesai." }
+                ],
+                include: ["Kapal Motor Penjelajah Pulau", "Tiket Masuk Taman Nasional Bali Barat", "Alat Snorkeling Lengkap (Masker, Snorkel, Fin)", "Makan Siang Box", "Guide Snorkeling Berpengalaman"],
+                exclude: ["Transportasi darat menuju pelabuhan", "Pengeluaran personal & Tips guide"]
+            },
+            balitour: {
+                title: "Bali City Tour - 4D 3N",
+                price: "Rp 2.671.000",
+                meetingPoint: "Bandara Internasional Ngurah Rai (DPS)",
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWwvxB4git69v0W0BvzJKFs5X-ucS8bC5f9A&s",
+                itinerary:  [
+                    { time: "Hari 1 ", activity: "_"},
+                    { time: "13.00 - 14.30 ", activity: "Penjemputan di Bandara Ngurah Rai, check-in hotel pilihan." },
+                    { time: "15.00 - 15.30 ", activity: "Pesiapan menuju Uluwatu Temple" },
+                    { time: "15.30 - 16.30 ", activity: "Perjalanan Menuju Uluwatu Temple" },
+                    { time: "16.00 - 19.00 ", activity: "Sunset & Show Kecak Dance Uluwatu Temple" },
+                    { time: "19.00 - 21.00 ", activity: "Perjalanan menuju pantai Jimbaran & Special Dinner Jimbaran Seafood." },
+                    { time: "21.00 - 22.00 ", activity: "Perjalan kembali ke Hotel dan Istirahat." },
+                    { time: "Hari 2 ", activity: "_." },
+                    { time: "07.30 - 09.00 ", activity: "Breakfast dan persiapan Activity." },
+                    { time: "09.00 - 10.00 ", activity: "Perjalanan menuju Tanjung Benoa." },
+                    { time: "10.00 - 12.00 ", activity: "Snorkeling dan Explpore Tanjung Benoa." },
+                    { time: "12.00 - 13.30 ", activity: "Break dan Makan siang." },
+                    { time: "13.30 - 14.30 ", activity: "Perjalanan menuju Melasti Beach." },
+                    { time: "15.30 - 17.00 ", activity: "Explore Pantai Melasti dan Pantai Pandawa, dan kembali ke Hotel." },
+                    { time: "Hari 3 ", activity: "_." },
+                    { time: "06.00 - 07.30 ", activity: "Persiapan Activity dan Breakfas." },
+                    { time: "07.30 - 10.00 ", activity: "Perjalan menuju Ubud." },
+                    { time: "10.30 - 13.00 ", activity: "Rafting di Ayung river." },
+                    { time: "13.00 - 14.00 ", activity: "Bersih-Bersih dan Makan Siang." },
+                    { time: "14.00 - 15.00 ", activity: "Perjalanan Menuju Desa Panglipuran." },
+                    { time: "15.00 - 16.30 ", activity: "Explore Desa Panglipuran." },
+                    { time: "16.30 - 19.00 ", activity: "Perjalanan kembali ke hotel dan istirahat." },
+                    { time: "Hari 4", activity: "_." },
+                    { time: "07.30 - 09.30 ", activity: "Sarapan dan persiapan Chek-out." },
+                    { time: "10.30 - 11.00 ", activity: "Perjalanan menuju pusat oleh-oleh Krisna" },
+                    { time: "11.00 - 12.30 ", activity: "Explore Oleh-oleh Bali." },
+                    { time: "13.00 ", activity: "Drop Off Bandara dan Trip Selesai." },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis dapat berubah sewaktu-waktu serta menyesuaikan situasi dan kondisi di lapangan" },
+                    
+                ],
+                include: ["Hotel", "Transport AC + Driver & BBM sesuai program", "Tiket masuk seluruh objek wisata", "Makan sesuai jadwal", "Air mineral harian"],
+                exclude: ["Tiket pesawat PP ke Bali", "Pengeluaran pribadi & Laundry hotel", "Tipping wajib Driver/Guide"]
+            },
+     
+            peucang: {
+                title: "Pulau Peucang - 3D 2N",
+                price: "Rp 750.000",
+                meetingPoint: "Multi-Mepo Jakarta (Cawang / Slipi / Kebon Jeruk)",
+                img: "https://storyofthepack.com/wp-content/uploads/2017/09/peucang.jpg",
+                itinerary:  [
+                    { time: "Hari 1", activity: "_" },
+                    { time: "20.00 ", activity: "Meeting Point Cawang , Dewi Sartika." },
+                    { time: "21.00 ", activity: "Perjalanan menuju  Pelabuhan Sumur (istirahat)." },
+                    { time: "Hari 2", activity: "_" },
+                    { time: "03.00 - 03.30 ", activity: "Tiba di Pelabuhan Sumur dan Melanjukan Penyebrangan ke Pulau Peucang." },
+                    { time: "08.30 - 08.40 ", activity: "Tiba di Pulau Peucang dan  Check in penginapan." },
+                    { time: "08.40 - 10.30 ", activity: "Snorkeling Explore keindahan bawah laut Pulau Peucang." },
+                    { time: "10.30 - 12.00 ", activity: "Free & Easy Time for Personal Exploration & Photo Session (Drone)." },
+                    { time: "12.00 - 13.30 ", activity: "Break Makan Siang." },
+                    { time: "08.40 - 10.30 ", activity: "Fun Time (Beach Play & Free Activity) ." },
+                    { time: "15.30 - 16.00 ", activity: "Persiapan untuk activity dan Visit Kiara Ancient Banyan Tree Peucang Island Iconic Spot." },
+                    { time: "16.00 - 18.00 ", activity: "Trip ke Karang Copong, dilanjutkan menikmati sunset di atas kapal." },
+                    { time: "19.00 - 20.00 ", activity: "Break, Makan Malam & Free time for personal activities" },
+                    { time: "Hari 3", activity: "_" },
+                    { time: "06.00 - 08.30 ", activity: "Enjoy sunrise dan explore Savana Cidaonn." },
+                    { time: "08.30 - 10.30 ", activity: "Breakfast and Enjoy at Pulau Peucang." },
+                    { time: "11.30 - 12.00 ", activity: "Persiapan Chek out procedur dan Makan Siang." },
+                    { time: "12.30 - 15.00 ", activity: "Perjalanan kembali ke Dermaga Sumur." },
+                    { time: "16.00 - 23.30 ", activity: "Perjalanan kembali ke Jakarta dan Trip Selesai" },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis dapat berubah sewaktu-waktu serta menyesuaikan situasi dan kondisi di lapangan" },
+
+                ],
+                include: ["Transport AC PP", "Kapal Penjelajah Pulau", "Penginapan di Pulau Peucang", "Makan 5x selama trip", "Tiket masuk Wisata", "Tour Guide & Leader", "Dokumentasi Gopro, Dslr & Drone","Asuransi"],
+                exclude: ["Alat Snorkeling", "Tipping Guide dan crew", "Keperluan pribadi"]
+            },
+            sabesi: {
+                title: "Pulau Sebesi - 3D 2N",
+                price: "Rp 675.000",
+                meetingPoint: "Cawang / Slipi / Pelabuhan Merak",
+                img: "https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/709902091_122123609199225342_8022066006278660616_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4H1OTLMczUkQ7kNvwF1eKtw&_nc_oc=AdovPgvWN8voCcaw316ygBx3KIbO23CXobXSSjrEhcphjZdS0MSNGBvML95Wi3gSQ31bxCMtbMw0Fm0dCvdMIXtl&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=cgkhBjpEFvcIi1bLcQU9nQ&_nc_ss=7b2a8&oh=00_Af_eqQE-2zVyvv2XbrbH6fMEQFW-sTqIH6G3w8y6Q7ifzg&oe=6A22517C",
+                itinerary: [
+                    { time: "Hari 1", activity: "_" },
+                    { time: "20.00 - 21.00  ", activity: "Meeting Point Cawang." },
+                    { time: "21.00 - 23.00  ", activity: "Perjalanan Menuju Pelabuhan Merak." },
+                    { time: "Hari 2", activity: "_" },
+                    { time: "00.00 - 03.00  ", activity: "Perjalanan Menuju Pelabuhan Bakaheuni." },
+                    { time: "03.30 - 05.00  ", activity: "Perjalanan Menuju Dermaga Centi." },
+                    { time: "07.00 - 08.00  ", activity: "Persiapan Trip dan Perjalanan menuju Pulau Sabuku Kecil." },
+                    { time: "09.00 - 10.00  ", activity: "Exploration & Photo Session di Pulau Sabuku Kecil." },
+                    { time: "10.00 - 11.00  ", activity: "Perjalanan menuju Spot Snorkeling." },
+                    { time: "11.00 - 12.00  ", activity: "Snorkeling Explore keindahan bawah laut Geligi dan Cemara." },
+                    { time: "12.00 - 12.30  ", activity: "Perjalanan menuju Pulau Sabesi." },
+                    { time: "12.00 - 15.00  ", activity: "Check-in process, break makan siang, dan free time dan Pesiapan untuk activity dan Explore Pulau Umang." },
+                    { time: "15.00 - 15.30  ", activity: "Perjalanan menuju Pulau Umang." },
+                    { time: "16.00 - 18.00  ", activity: "Explore Pulau Umang, enjoy a photo session, and sunset view." },
+                    { time: "18.00 - 19.00  ", activity: "Perjalanan kembali ke homestay dan clean up." },
+                    { time: "19.30 - 21.00  ", activity: "Makan malam, Free time and rest." },
+                    { time: "Hari 3", activity: "_" },
+                    { time: "04.00 - 05.00  ", activity: "Wake up & Persiapan Treeking." },
+                    { time: "05.00 - 07.00  ", activity: "Perjalanan menuju trekking point dan memulai aktivitas trekking di Anak Krakatau." },
+                    { time: "09.00 - 10.00  ", activity: "Perjalanan kembali ke Pulau Sebesi dan clean up." },
+                    { time: "11.00 - 14.00  ", activity: "Persiapan Chek out procedur dan Makan Siang." },
+                    { time: "11.00 - 14.00  ", activity: "Persiapan Chek out procedur dan Makan Siang." },
+                    { time: "14.00 - 14.30  ", activity: "Perjalana kembali menuju Dermaga Centi." },
+                    { time: "15.00 - 16.00  ", activity: "Perjalana kembali menuju Pelabuhan Bakaheuni." },
+                    { time: "16.30 - 20.00  ", activity: "Perjalana kembali menuju Pelabuhan Merak." },
+                    { time: "20.00 - 23.30  ", activity: "Perjalana kembali menuju Meeting Point dan Trip Selesai." },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis dapat berubah sewaktu-waktu serta menyesuaikan situasi dan kondisi di lapangan" },
+
+                ],
+                include: ["Transportasi AC PP", "Kapal Feri PP", "Kapal Penjelajah Pulau", "Homestay", "Makan 4x","Asuransi","P3k","Tour Leader & Guide Tour","Dokumentasi", "Life jacket", "Air Mineral", "Tiket Masuk Wisata"],
+                exclude: ["Kebutuhan dan obat-obatan pribadi", "Alat snorkeling", "Pengeluaran pribadi","Tipping Guide dan crew"]
+            },
+            karimunjawa: {
+                title: "Pulau Karimun Jawa - 3D 2N",
+                price: "Rp 805.000",
+                meetingPoint: "Pelabuhan Kartini, Jepara, Jawa Tengah",
+                img: "https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/710226756_122123609271225342_7870333003321209509_n.webp?stp=dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=j-r1tlribPEQ7kNvwHkBxJA&_nc_oc=AdpKR_g9AAup-zDhamDXtEK3SdTMyhnZkW7UEsFeM39bIVdMnTfwpGpvkM8FQ63OsrFJXJBxZ8XP2wuCRzTuE5pm&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=gsaXKUAQmwnMxcsnTK3sNw&_nc_ss=7b2a8&oh=00_Af9dJC4I0YqR59Fj6bhFzv4TTC77WoGJOXjT-EYa-XEt6Q&oe=6A226318",
+                itinerary: [
+                    { time: "Hari 1", activity: "_" },
+                    { time: "05.30 - 06.30  ", activity: "Meeting point Pelabuhan Kartini Jepara." },
+                    { time: "06.30 - 12.00  ", activity: "Perjalanan Menuju Penginapan." },
+                    { time: "12.30 - 14.00  ", activity: "Check-in process, break makan siang, dan free time dan Pesiapan untuk activities dan Explore." },
+                    { time: "14.00 - 15.00  ", activity: "Perjalanan menuju Bukit Love, enjoy panoramic views dan photo session." },
+                    { time: "15.00 - 16.30  ", activity: "Perjalanan menuju Tanjung Gelam (Sunset Beach), menikmati white sand beach dan batu karang." },
+                    { time: "15.00 - 16.30  ", activity: "Perjalanan kembali menuju Dermaga Karimun Jawa and enjoy a beautiful sunset view." },
+                    { time: "17.00 - 18.00  ", activity: "Kembali ke penginapan, clean up, dinner, dan free time." },
+                    { time: "Hari 2", activity: "_" },
+                    { time: "06.00 - 07.00  ", activity: "Wake up, Break fast & Persiapan Activities." },
+                    { time: "08:30 - 10:30  ", activity: "Snorkeling di spot terumbu karang Menjangan Kecil" },
+                    { time: "10:30 - 13:00  ", activity: "Perjalanan menuju Pulau Cemara Besar, explore pulau dan makan siang" },
+                    { time: "14:00 - 15:00  ", activity: "Snorkeling at Secret Garden coral reef, one of the best snorkeling spots in Karimunjawa" },
+                    { time: "15:00 - 17:00  ", activity: "Perjalanan menuju Pulau Menjangan Kecil, explore pantai Menjangan Kecil (resort area excluded) dan menikmati sunset." },
+                    { time: "17.00 - 18.00  ", activity: "Kembali ke penginapan, clean up, dinner, dan free time." },
+                    { time: "Hari 3", activity: "_" },
+                    { time: "06.00 - 06.30  ", activity: "Break fast & Persiapan Check out procedure." },
+                    { time: "06.30 - 12.00  ", activity: "Perjalanan kembali ke Pelabuhan Kartin Jepara dan Trip Selesai" },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis dapat berubah sewaktu-waktu serta menyesuaikan situasi dan kondisi di lapangan" },
+
+                ],
+                include: ["Tiket kapal Ferry PP", "Transportasi darat", "Kapal penjelajah pulau", "Homestay kipas (1 kamar isi 3 Orang )", "Makan 6x","Tiket Wisata","Alat Snorkeling", "Asuransi",  "Dokumentasi", "Life Jacket","Tour Guide & Tour Leader", "Air mineral"],
+                exclude: ["Kebutuhan dan obat-obatan pribadi", "Tiket Bukit Love", "Tiket Tanjung Gelam", "Tiket Penangkaran Hiu", "Tiket Menjangan Resort"]
+            },
+     
+            harapan: {
+                title: "Pulau Harapan - 2D 1N",
+                price: "Rp 418.000",
+                meetingPoint: "Pelabuhan Muara Angke (Kali Adem)",
+                img: "https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&w=800&q=80",
+                itinerary: [
+                    { time: "Hari 1", activity: "_" },
+                    { time: "06.00", activity: "Meeting point Muara Angke (Kali Adem)." },
+                    { time: "08.00 - 11.00  ", activity: "Perjalanan menuju Pulau Harapan." },
+                    { time: "11.00 - 12.30  ", activity: "Check-in process, break makan siang, dan free time dan Pesiapan untuk activities dan Explore." },
+                    { time: "13.00 - 15.00  ", activity: "Snorkeling dan island hopping, explore keindahan Dolphin Island & Gosong Perak." },
+                    { time: "16.30 - 17.30  ", activity: "Explore Pulau Bulat, menikmati sunset, dan kembali ke Pulau Harapan." },
+                    { time: "18.00 - 22.00  ", activity: "Clean up, dilanjutkan makan malam serta BBQ, free time, dan istirahat." },
+                    { time: "Hari 2", activity: "_" },
+                    { time: "05.00 - 07.00  ", activity: "Menikmati sunrise di Pulau Harapan, clean up, sarapan, dan packing untuk prepare kembali ke Jakarta." },
+                    { time: "08.00 - 09.00  ", activity: "Explore Taman Mangrove & Penangkaran Penyu" },
+                    { time: "09.00 - 10.30  ", activity: "Check-out process dan perjalanan kembali ke dermaga Pulau Harapan" },
+                    { time: "11.00 - 14.00  ", activity: "Perjalanan menuju Pelabuhan Muara Angke (kali Adem) dan Trip Selesai" },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis dapat berubah sewaktu-waktu serta menyesuaikan situasi dan kondisi di lapangan" },
+
+                ],
+                include: ["Tiket kapal PP", "Homestay AC (sharing room)", "Makan 3x", "BBQ", "Kapal Penjelajah Pulau","Dokumentasi Underwater", "Asuransi", "P3K", "Air Mineral", "Life Jacket", "Alat snorkeling", "Guide Tour & Tour Leader"],
+                exclude: ["Tipping Guide dan crew", "Kebutuhan dan obat-obatan pribadi", "Tiket Penangkaran Penyu"]
+            },
+            baduy: {
+                title: "Baduy - 2D 1N",
+                price: "Rp 250.000",
+                meetingPoint: "Stasiun Rangkasbitung, Banten",
+                img: "https://images.unsplash.com/photo-1658061927500-7c55a64af6c5?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFkdXl8ZW58MHx8MHx8fDA%3D",
+                itinerary:  [
+                     { time: "Hari 1", activity: "_" },
+                     { time: "09.00", activity: "Meeting point Stasiun Rangkasbitung." },
+                     { time: "09.00 - 11.00  ", activity: "Perjalanan menuju Desa Cibuleger." },
+                     { time: "09.00 - 11.00  ", activity: "Perjalanan menuju Desa Cibuleger." },
+                     { time: "11.00 - 12.00  ", activity: "Break & Makan Siang (Exclude)." },
+                     { time: "12.00 - 16.00  ", activity: "Trekking menuju Baduy Dalam (Ciboleger. Baduy Luar. Baduy Dalam)." },
+                     { time: "16.00 - 19.00  ", activity: "Tiba di homestay, clean up, explore desa, Makan Malam dan kebersamaan bersama warga Baduy." },
+                     { time: "Hari ", activity: "_" },
+                     { time: "06.00", activity: "Menikmati Sunrise di Desa Baduy Dalam." },
+                     { time: "07.00 - 09.00  ", activity: "Breakfast dan membeli oleh-oleh, dilanjutkan explore Desa Baduy Dalam menuju Ciboleger melalui jembatan akar." },
+                     { time: "07.00 - 09.00  ", activity: "Perjalanan kembali menuju Ciboleger, dilanjutkan perjalanan ke Stasiun Rangkasbitung." },
+                     { time: "13.00 - 14.00  ", activity: "Break, Melanjutkan kembali menuju Meeting point dan Trip Selesai." },
+                     { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis dapat berubah sewaktu-waktu serta menyesuaikan situasi dan kondisi di lapangan" },
+
+                ],
+                include: ["Transportasi Lokal PP", "Homestay Lokal", "Tiket Wisata", "Asuransi", "Makan 2x", "P3K", "Tour Guide"],
+                exclude: ["Perlengkapan Pribadi", "Makan di luar program", "Pengeluaran Pribadi", "Tipping Guide dan crew"]
+            },
+            pari: {
+                title: "Pulau Pari - 1D (Day Trip)",
+                price: "Rp 180.000",
+                meetingPoint: "Pelabuhan Muara Kamal, Jakarta Utara",
+                img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+                itinerary: [
+                    { time: "06.00 - 07.00", activity: "Berkumpul di area parkir Pelabuhan Muara Kamal, absensi kehadiran, dan naik ke dalam kapal motor tradisional penyeberangan." },
+                    { time: "07.30 - 10.00", activity: "Perjalanan laut melintasi perairan Teluk Jakarta menuju Pulau Pari, salah satu pulau terdekat Kepulauan Seribu." },
+                    { time: "10.00 - 12.00", activity: "Tiba di pulau, pembagian sepeda (opsional) atau jalan kaki menuju kawasan wisata Pantai Pasir Perawan yang berpasir putih halus." },
+                    { time: "12.00 - 13.00", activity: "Istirahat siang di saung pinggir pantai, ibadah, dan menikmati paket makan siang nasi kotak lauk lokal." },
+                    { time: "13.00 - 14.30", activity: "Acara bebas untuk berswafoto di landmark tulisan Pulau Pari, bermain air, berbilas tubuh, dan persiapan kembali menuju dermaga utama." },
+                    { time: "14.30 - 17.00", activity: "Kapal berangkat kembali menuju Dermaga Muara Kamal Jakarta Utara. Tiba di daratan utama, trip dinyatakan selesai." },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis, dapat berubah sewaktu-waktu menyesuaikan situasi, cuaca, dan kondisi aktual di lapangan." }
+                ],
+                include: ["Tiket Kapal Penyeberangan PP Muara Kamal", "Tiket Masuk Gerbang Utama Pantai Pasir Perawan", "Makan Siang Nasi Kotak Standar", "Tour Leader Pendamping & Dokumentasi Dasar"],
+                exclude: ["Sewa sepeda gowes keliling pulau", "Sewa perahu sampan kano hias di pantai", "Pengeluaran jajan pribadi"]
+            },
+            nusapenida: {
+                title: "Nusa Penida - 1D (Day Trip)",
+                price: "Rp 600.000",
+                meetingPoint: "Pelabuhan Sanur, Denpasar, Bali",
+                img: "https://plus.unsplash.com/premium_photo-1661962878782-8841a385019d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bnVzYSUyMHBlbmlkYXxlbnwwfHwwfHx8MA%3D%3D",
+                itinerary: [
+                    { time: "07.00 - 07.30", activity: "Kumpul di Pelabuhan Sanur di konter operator kapal cepat, pembagian tiket gelang tangan, dan boarding ke Fastboat." },
+                    { time: "08.00 - 08.45", activity: "Sailing cepat melintasi Selat Badung menuju dermaga penyeberangan pelabuhan Nusa Penida barat." },
+                    { time: "08.45 - 11.00", activity: "Penjemputan oleh driver mobil lokal, perjalanan berbukit menuju Kelingking Beach untuk melihat tebing T-Rex legendaris." },
+                    { time: "11.00 - 13.00", activity: "Eksplorasi spot foto Paluang Cliff, dilanjutkan bergeser ke Broken Beach (Pasih Uug) serta kolam air asin alami Angel's Billabong." },
+                    { time: "13.00 - 14.00", activity: "Istirahat sejenak dan menikmati santap makan siang menu khas di restoran lokal mitra terpilih." },
+                    { time: "14.00 - 15.30", activity: "Perjalanan menuju kawasan Pantai Crystal Bay untuk menikmati suasana pantai pasir putih berpasir landai yang teduh." },
+                    { time: "15.30 - 16.30", activity: "Mobilisasi kembali menuju dermaga utama penyeberangan Nusa Penida untuk proses boarding kepulangan." },
+                    { time: "16.30 - 17.15", activity: "Sailing menggunakan fastboat kembali menuju Pelabuhan Sanur Denpasar. Tiba di Sanur, petualangan trip selesai." },
+                    { time: "Notes", activity: "Jadwal OPEN TRIP tidak terikat itinerary yang tertulis, dapat berubah sewaktu-waktu menyesuaikan situasi, cuaca, dan kondisi aktual di lapangan." }
+                ],
+                include: ["Tiket Fast Boat PP Sanur - Nusa Penida", "Mobil Avanza/APV Ber-AC Selama di Pulau", "Driver Lokal Sekaligus Pemandu & Fotografer", "Tiket Masuk Destinasi & Retribusi Daerah", "Makan Siang di Restoran Lokal", "Air Mineral Kemasan Botol"],
+                exclude: ["Transportasi antar-jemput ke hotel asal Bali", "Aktivitas watersport/donat boat", "Tipping sukarela Driver"]
+            },
+            
+            // Premium Experience Workshop
+            Surfing: {
+                title: "Surfing Class",
+                price: {
+                base: "Rp.562.000",
+                incTransport: "Rp.892.000"
+                },
+                duration: "2 Jam",
+                img: "https://scontent.fcgk33-1.fna.fbcdn.net/v/t39.30808-6/710306950_122123609343225342_5157483425747875310_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=DhrTpHzYXooQ7kNvwGbyon3&_nc_oc=AdoSc1be_MsaU7-e9Z_NP9WIjxN7oDNtmwWCDKa3t8NsAkuz91Qtwd6_Nr0HI8saneUU-od6sPdj5luhI5uox07N&_nc_zt=23&_nc_ht=scontent.fcgk33-1.fna&_nc_gid=KYkD5KVhaXE2LS-z4mjeqQ&_nc_ss=7b2a8&oh=00_Af8ZlBpqOfYq4XbhKnWPMtWns39ui3A3cwO6Ufp-TfPxuw&oe=6A22809D",
+                itinerary: [
+                    { time: "Tentang", activity: "Berselancar (surfing) adalah cara terbaik untuk menyatu dengan deburan ombak. Aktivitas olahraga air ini menggunakan papan selancar dengan berbagai ukuran serta tipe, dan sangat digemari oleh semua kalangan karena sensasinya yang luar biasa seru. Olahraga ini menuntut energi yang prima untuk mengejar ombak, serta mengasah kemampuan Anda dalam membaca pergerakan ombak dan arah angin di laut." },
+                    { time: "Apa yang Akan Dilakukan", activity: "Kelas ini dirancang khusus bagi pemula yang belum pernah berselancar, jadi Anda tidak butuh pengalaman sama sekali. Aktivitas dimulai dengan latihan dasar di pantai bersama instruktur profesional untuk belajar teknik mendayung (paddle out) dan cara berdiri yang benar di atas papan selancar. Demi keamanan, Anda akan menggunakan papan khusus berpermukaan lembut (soft top longboard) yang sangat stabil untuk memudahkan Anda menjaga keseimbangan. Setelah pemanasan, Anda akan langsung turun ke laut didampingi instruktur untuk mempraktikkan teori dan merasakan serunya meluncur di atas ombak selama 2 jam sesi penuh." },
+                    { time: "11.30 - 12.00", activity: "Proses pewarnaan kain (colet/celup), pelorodan malam air mendidih, pembilasan bersih, pengeringan, dan penyerahan karya untuk dibawa pulang." }
+                ],
+                include: ["Kain Katun Berpola (Bisa Dipilih)", "Peralatan Canting, Malam, & Pewarna Sintetis", "Instruktur Pengrajin Batik Profesional", "Welcome Drink Air Kelapa Muda Segar"],
+                exclude: ["Akomodasi penginapan/hotel resort", "Pengiriman paket kain jika belum kering"]
+            },
+            Cooking: {
+                title: "Cooking Experience",
+                price: {
+                base: "Rp.320.000",
+                incTransport: "Rp.680.000"
+                },
+                duration: "3 Jam",
+                img: "https://i.pinimg.com/736x/e6/5a/4f/e65a4f2c5063dfcb83555afe54b6441b.jpg",
+                itinerary: [
+                    { time: "Tentang", activity: "Ini adalah salah satu aktivitas yang wajib Anda coba selama berada di Bali. Ada banyak sekali jenis kuliner tradisional Bali yang bisa Anda kreasikan dan buat sendiri. Anda akan menjelajahi berbagai macam rempah-rempah pilihan serta mempelajari metode memasak tradisional langsung dari akarnya." },
+                    { time: "Apa yang Akan Dilakukan", activity: "Anda akan dibawa mengunjungi pasar tradisional Bali untuk melihat langsung aktivitas harian warga lokal dan mempelajari bagaimana cara mereka berbelanja kebutuhan pangan. Setelah dari pasar, perjalanan dilanjutkan dengan mengunjungi areal persawahan yang indah. Di sini, Anda akan belajar tentang sistem irigasi air tradisional Bali yang terkenal bernama Subak, serta melihat langsung bagaimana proses padi ditanam. Di tempat ini, Anda tidak hanya belajar memasak kuliner khas Bali dengan bumbu rahasia, tetapi juga belajar membuat sesajen tradisional Bali, yaitu Kuwangen dan Canang Sari yang dirangkai dari daun kelapa dan bunga warna-warni." },
+                    
+                ],
+                include: ["Transportasi (sesuai paket pilihan)", "Traditional snacks",],
+                exclude: ["Pakaian olahraga khusus (bawa pribadi)", "Handuk kecil pribadi untuk keringat"]
+            },
+            ATV: {
+                title: "ATV Journey",
+                price: {
+                base: "Rp.650.000",
+                incTransport: "Rp.1.010.000"
+                },
+                duration: "1 Jam",
+                img: "https://scontent.fcgk27-1.fna.fbcdn.net/v/t39.30808-6/711474767_122123617617225342_8210580626144087212_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=APXgF-hDJ1gQ7kNvwFXS_jT&_nc_oc=Adrb4OZZZiUz4_D4N0P0wD1a2uFgq8xliZ0msfdD2slzUxtiU9S06YnccFlXqgjg2rc&_nc_zt=23&_nc_ht=scontent.fcgk27-1.fna&_nc_gid=3iF-FfnMbwlc02hPor5Fng&_nc_ss=7b2a8&oh=00_Af8JBa0x_oeMnMIJ5mnYmBnnz2wdm9f6CDThTUU7l-HvUg&oe=6A2307CF",
+                itinerary: [
+                    { time: "Tentang", activity: " Bebaskan jiwa petualang Anda dengan keseruan paket ATV Journey! Aktivitas off-road ini dirancang khusus bagi Anda yang ingin memacu adrenalin sekaligus menjelajahi keindahan alam terbuka. Aman untuk pemula maupun pengendara berpengalaman, aktivitas ini membawa Anda melewati medan yang menantang namun penuh keseruan. Anda akan mengendarai kendaraan tangguh melewati trek berlumpur, jalur hutan, jalanan pedesaan yang asri, hingga masuk ke dalam goa terowongan yang ikonik." },
+                    { time: "Apa yang Akan Dilakukan", activity: "Kami akan membawa Anda ke lokasi petualangan, di mana aktivitas akan dimulai dengan pengarahan keselamatan serta sesi latihan singkat untuk beradaptasi dengan kendaraan. Setelah Anda nyaman, petualangan berkendara ATV selama 1 jam penuh akan dimulai. Anda akan menaklukkan berbagai trek yang menantang, mulai dari jalanan berbatu yang bergelombang, jalur berlumpur, hingga jalan setapak hijau yang menyegarkan mata. Sensasi paling seru menanti saat Anda mengendarai ATV menembus goa terowongan gelap yang eksotis." },
+                    
+                ],
+                include: ["Transportasi (sesuai paket yang dipilih)", "Fasilitas ruang bilas, ruang ganti", "Makan siang"],
+                exclude: ["Sewa perlengkapan selam Scuba Diving penuh", "Dokumentasi video aksi bawah laut privat"]
+            },
+        Treeking: {
+                title: "Mount Batur Sunrise Trekking & Breakfast Experience",
+                price: {
+                base: "Rp.625.000",
+                incTransport: "Rp.985.000"
+                },
+                duration: "4-5 Jam)",
+                img: "https://scontent.fcgk27-1.fna.fbcdn.net/v/t39.30808-6/712267313_122123676735225342_7576256905805835356_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tuc-Az-YPH8Q7kNvwE5A9mZ&_nc_oc=AdqLcNVj5OetnkCtPubDUqIiGltacnc4zJhlrCYuN7gtJSd5-4qT1vYHzNla9RXhI9Q&_nc_zt=23&_nc_ht=scontent.fcgk27-1.fna&_nc_gid=A5eJEeUj2AU84jeaQcLJHg&_nc_ss=7b2a8&oh=00_Af9M6bImWwkY-K2pWd9zoN0lfX0QwkvyXcP2NFEQOZP0Hw&oe=6A2313D1",
+                itinerary: [
+                    { time: "Tentang", activity: "Mendaki Gunung Batur untuk melihat matahari terbit adalah salah satu pengalaman alam paling ikonik di Bali. Gunung berapi aktif setinggi 1.717 meter ini menawarkan jalur pendakian yang seru dan menantang, biasanya dilakukan pada malam hari di bawah langit berbintang dengan udara yang sejuk. Tidak perlu menjadi pendaki profesional, cukup semangat dan kerja sama tim untuk mencapai puncak, dan perjalanan akan didampingi oleh pemandu lokal berpengalaman agar terasa aman, nyaman, dan semakin berkesan hingga menikmati sunrise dari atas Gunung Batur.." },
+                    { time: "Apa yang Akan Dilakukan", activity: "Kami akan mengantar Anda menuju puncak Gunung Batur. Perjalanan memakan waktu sekitar 2 jam dengan medan berupa abu vulkanik dan jalur berbatu yang beberapa bagiannya cukup curam, namun pemandu kami akan menjaga ritme pendakian agar tetap nyaman. Sesampainya di puncak, Anda akan disuguhi pemandangan matahari terbit yang spektakuler dengan latar Gunung Agung, Gunung Abang, dan Danau Batur, serta menikmati sarapan hangat yang disajikan di atas gunung.." },
+                    
+                ],
+                include: ["Transportasi (sesuai paket yang dipilih)", "Pemandu pendakian lokal", "Breakfast", "Trail Gear"],
+                exclude: ["Akomodasi penginapan/hotel resort", "Pengiriman paket kain jika belum kering"]
+            },
+            Rafting: {
+                title: "Rafting Experience",
+                price: {
+                base: "Rp.390.000",
+                incTransport: "Rp.750.000"
+                },
+                duration: "2 Jam",
+                img: "https://scontent.fcgk27-2.fna.fbcdn.net/v/t39.30808-6/712025330_122123690505225342_6418530654918945221_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=48S3yGbs4w0Q7kNvwHK0Rzs&_nc_oc=AdosPoHMUBYHrJpvlJ2RepHdf2z3rDN0-JM4ghI7-0i4kPFC7O8obMOL9rrXnYxdEgc&_nc_zt=23&_nc_ht=scontent.fcgk27-2.fna&_nc_gid=B1Vb2EMfyOXZM9TBSrIcIg&_nc_ss=7b2a8&oh=00_Af9qIdsnXVDDm4LjbXHY66bX14v8zDyDdrdFVQ3xuBX78Q&oe=6A233642",
+                itinerary: [
+                    { time: "Tentang", activity: "Arung jeram (rafting) mulai populer di Indonesia sejak era 90-an sebagai salah satu aktivitas petualangan yang menantang sekaligus menyenangkan. Olahraga ini menghadirkan pengalaman seru saat menaklukkan arus sungai yang deras dan penuh rintangan dengan strategi yang tepat. Setiap peserta dituntut untuk bekerja sama secara kompak dalam tim, karena keberhasilan dan keselamatan sangat bergantung pada koordinasi, komunikasi, serta kekuatan kebersamaan." },
+                    { time: "Apa yang Akan Dilakukan", activity: "Peserta akan dibawa ke lokasi arung jeram untuk menikmati aktivitas selama 2 jam. Karakteristik aliran airnya cukup deras, namun peserta juga bisa memilih bagian sungai yang airnya tidak terlalu deras. Selain itu, terdapat satu titik khusus di sungai di mana peserta bisa berenang.." },
+                    
+                ],
+                include: ["Transportasi (tergantung paket yang dipilih)", "Makan siang", "Fasilitas ruang bilas, ruang ganti"],
+                exclude: ["Akomodasi penginapan/hotel resort", "Pengiriman paket kain jika belum kering"]
+            },
+        };
+
+        // CONTROLLER MODAL MULTI-LAYOUT DUA JALUR
+        function bukaModal(id, type) {
+            const data = databaseProduk[id];
+            if (!data) return alert("Maaf, data paket '" + id + "' tidak ditemukan!");
+
+            const overlay = document.getElementById('itineraryModal');
+            const boxTrip = document.getElementById('modalBoxTrip');
+            const boxExp = document.getElementById('modalBoxExp');
+
+            overlay.classList.remove('hidden');
+            overlay.style.display = 'flex';
+            boxTrip.classList.add('hidden'); boxTrip.style.display = 'none';
+            boxExp.classList.add('hidden'); boxExp.style.display = 'none';
+
+            if (type === 'experience') {
+               document.getElementById('modalTitleExp').innerText = data.title;
+               document.getElementById('modalDurationExp').innerText = " Durasi: " + data.duration;
+               document.getElementById('modalImgMainExp').src = data.img;
+               
+            document.getElementById('modalPriceIncExp').innerHTML = `
+             <div style="margin-bottom: 12px;">
+            <span style="font-size: 14px; color: #666; display: block; font-weight: bold;">Exclude Transport</span>
+            <span style="font-size: 16px;">PRICE : <b>${data.price.base} / person</b></span>
+        </div>
+        <div>
+            <span style="font-size: 14px; color: #666; display: block; font-weight: bold;">Include Transport</span>
+            <span style="font-size: 16px;">PRICE : <b>${data.price.incTransport} / person</b></span>
+        </div>
+    `;    
+                let todoHtml = "";
+                data.itinerary.forEach(item => {
+                    todoHtml += `<div><span class="block text-xs font-bold text-indigo-600">${item.time}</span><p class="text-sm text-slate-700 font-light mt-0.5">${item.activity}</p></div>`;
+                });
+                document.getElementById('modalTodoExp').innerHTML = todoHtml;
+
+                let provideHtml = "";
+                data.include.forEach(item => { provideHtml += `<li>✓ ${item}</li>`; });
+                document.getElementById('modalProvideExp').innerHTML = provideHtml;
+                
+                document.getElementById('modalBookingBtnExp').href = "https://wa.me/62895369809676?text=" + encodeURIComponent(`Halo Dawn'scape, saya mau booking Experience: *${data.title}*.`);
+
+                boxExp.classList.remove('hidden'); boxExp.style.display = 'flex';
+                setTimeout(() => { boxExp.classList.remove('scale-95', 'opacity-0'); boxExp.classList.add('scale-100', 'opacity-100'); }, 20);
+            
+            } else {
+                document.getElementById('modalTitleTrip').innerText = data.title;
+                document.getElementById('modalPriceTrip').innerText = data.price + "/pax";
+                document.getElementById('modalImgTrip').src = data.img;
+                document.getElementById('modalMeetingPointText').innerText = "📍 Meeting Point: " + data.meetingPoint;
+
+                let itiHtml = "";
+                data.itinerary.forEach(item => {
+                    if(item.time === "Notes") {
+                        itiHtml += `<div class="relative pl-6 mt-4 pt-4 border-t border-slate-100"><span class="block text-xs font-bold text-rose-500">${item.time}</span><p class="text-xs text-slate-500 italic leading-relaxed mt-0.5">${item.activity}</p></div>`;
+                    } else {
+                        itiHtml += `<div class="relative pl-6 mb-4"><span class="block text-xs font-bold text-blue-600">${item.time}</span><p class="text-sm text-slate-700 font-light leading-relaxed mt-0.5">${item.activity}</p></div>`;
+                    }
+                });
+                document.getElementById('modalItinerary').innerHTML = itiHtml;
+
+                let incHtml = ""; data.include.forEach(item => { incHtml += `<li class="mb-1">✓ ${item}</li>`; });
+                document.getElementById('modalInclude').innerHTML = incHtml;
+
+                let excHtml = ""; data.exclude.forEach(item => { excHtml += `<li class="mb-1">✕ ${item}</li>`; });
+                document.getElementById('modalExclude').innerHTML = excHtml;
+                
+                document.getElementById('modalBookingBtnTrip').href = "https://wa.me/62895369809676?text=" + encodeURIComponent(`Halo Dawn'scape, saya tertarik booking Open Trip: *${data.title}*.`);
+
+                boxTrip.classList.remove('hidden'); boxTrip.style.display = 'flex';
+                setTimeout(() => { boxTrip.classList.remove('scale-95', 'opacity-0'); boxTrip.classList.add('scale-100', 'opacity-100'); }, 20);
+            }
+        }
+
+        function tutupModal() {
+            const overlay = document.getElementById('itineraryModal');
+            document.getElementById('modalBoxTrip').classList.add('opacity-0', 'scale-95');
+            document.getElementById('modalBoxExp').classList.add('opacity-0', 'scale-95');
+            setTimeout(() => { overlay.classList.add('hidden'); overlay.style.display = 'none'; }, 200);
+        }
+
+        function toggleMobileMenu() {
+            alert('Menu Navigasi Mobile Aktif!');
+        }
+    </script>
+</body>
+</html>
